@@ -1,21 +1,19 @@
-sudo tcpdump -i enx9c69d36894fa src host 192.168.2.109 -nn
+# 拉取主仓库代码并初始化子模块
 
-sudo tcpdump -i enp4s0 src host 192.168.1.118 -nn
+git clone --recursive https://github.com/Renwang-Huang/lidar_perception.git
 
-ros2 launch livox_ros_driver2 rviz_MID360_launch1.py
+# 配置激光雷达驱动
 
-ros2 launch livox_ros_driver2 rviz_MID360_launch2.py
+## Livox-SDK2
 
-ros2 launch livox_to_pointcloud2 livox_to_pointcloud2_1.launch.yml
+cd thirdparty/Livox-SDK2
 
-ros2 launch livox_to_pointcloud2 livox_to_pointcloud2_2.launch.yml
+mkdir build && cd build
 
-ros2 launch livox_lidar_merge merge.launch.py
+cmake .. && make -j
 
-ros2 launch fastlio2 lio_launch.py
+sudo make install && sudo ldconfig
 
-sudo ptp4l -i enP8p1s0 -S -m -l 6 -f automotive-master.cfg
+## livox_ros_driver2
 
-sudo ptp4l -i enx9c69d36894fa -S -m -l 6 -f automotive-master.cfg
 
-ros2 launch merge_cloud mix.launch.py
