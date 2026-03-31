@@ -2,6 +2,6 @@ build/
 log/
 install/
 
-3rdparty/Livox-SDK2/
-3rdparty/livox_ros_driver2/
 3rdparty/Sophus/
+
+.vscode/
