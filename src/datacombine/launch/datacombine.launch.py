@@ -6,16 +6,16 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
 
     config_file = PathJoinSubstitution([
-        FindPackageShare("merge_cloud"),
+        FindPackageShare("datacombine"),
         "config",
-        "merge_config.yaml"
+        "datacombine_config.yaml"
     ])
 
     return LaunchDescription([
         Node(
-            package='merge_cloud',
-            executable='merge_cloud_node',
-            name='merge_cloud_node',
+            package='datacombine',
+            executable='data_combine_node',  
+            name='data_combine_node',        
             output='screen',
             parameters=[config_file],
         ),

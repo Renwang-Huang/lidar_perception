@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(merge_cloud)
+project(datacombine)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -11,22 +11,22 @@ find_package(sensor_msgs REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(livox_ros_driver2 REQUIRED)
 
-add_executable(merge_cloud_node src/main.cpp)
+add_executable(data_combine_node src/datacombine.cpp)
 
 ament_target_dependencies(
-  merge_cloud_node
+  data_combine_node
   rclcpp
   sensor_msgs
   livox_ros_driver2
 )
 
 target_link_libraries(
-  merge_cloud_node
+  data_combine_node
   Eigen3::Eigen
 )
 
 install(TARGETS
-  merge_cloud_node
+  data_combine_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

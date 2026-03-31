@@ -6,39 +6,58 @@
 #include <Eigen/Dense>
 #include <cmath>
 #include <deque>
+#include <string>
 
 using std::placeholders::_1;
 
-class MergeCloudNode : public rclcpp::Node
+class DataCombineNode : public rclcpp::Node
 {
 public:
-  MergeCloudNode() : Node("merge_cloud_node")
+  DataCombineNode() : Node("data_combine_node")
   {
+    // 加载外参配置并预计算矩阵
     loadAndPrecomputeParams();
     
-    merged_cloud_pub_ = this->create_publisher<livox_ros_driver2::msg::CustomMsg>("/merged_cloud", 10);
-    imu_pub_ = this->create_publisher<sensor_msgs::msg::Imu>("/cloud_registered_body/imu", 100);
+    // 声明并从外部读取话题名称参数
+    std::string combined_cloud_topic = this->declare_parameter<std::string>("topics.combined_cloud", "/combined_cloud");
+    std::string combined_imu_topic   = this->declare_parameter<std::string>("topics.combined_imu", "/cloud_registered_body/imu");
+    std::string lidar1_topic         = this->declare_parameter<std::string>("topics.lidar1", "/livox/lidar_192_168_2_144");
+    std::string lidar2_topic         = this->declare_parameter<std::string>("topics.lidar2", "/livox/lidar_192_168_1_112");
+    std::string imu_topic            = this->declare_parameter<std::string>("topics.imu", "/livox/imu_192_168_2_144");
+
+    // 打印当前使用的话题配置，方便Debug
+    RCLCPP_INFO(this->get_logger(), "--- Topic Configuration ---");
+    RCLCPP_INFO(this->get_logger(), "Combined Cloud : %s", combined_cloud_topic.c_str());
+    RCLCPP_INFO(this->get_logger(), "Combined IMU   : %s", combined_imu_topic.c_str());
+    RCLCPP_INFO(this->get_logger(), "LiDAR 1 Sub    : %s", lidar1_topic.c_str());
+    RCLCPP_INFO(this->get_logger(), "LiDAR 2 Sub    : %s", lidar2_topic.c_str());
+    RCLCPP_INFO(this->get_logger(), "IMU Sub        : %s", imu_topic.c_str());
+    RCLCPP_INFO(this->get_logger(), "---------------------------");
+
+    // 使用读取到的参数初始化发布者和订阅者
+    combined_cloud_pub_ = this->create_publisher<livox_ros_driver2::msg::CustomMsg>(combined_cloud_topic, 10);
+    imu_pub_ = this->create_publisher<sensor_msgs::msg::Imu>(combined_imu_topic, 100);
     
     cloud1_sub_ = this->create_subscription<livox_ros_driver2::msg::CustomMsg>(
-      "/livox/lidar_192_168_1_118", 10, 
-      std::bind(&MergeCloudNode::cloud1Callback, this, _1));
+      lidar1_topic, 10, 
+      std::bind(&DataCombineNode::cloud1Callback, this, _1));
       
     cloud2_sub_ = this->create_subscription<livox_ros_driver2::msg::CustomMsg>(
-      "/livox/lidar_192_168_2_109", 10, 
-      std::bind(&MergeCloudNode::cloud2Callback, this, _1));
+      lidar2_topic, 10, 
+      std::bind(&DataCombineNode::cloud2Callback, this, _1));
     
     imu_sub_ = this->create_subscription<sensor_msgs::msg::Imu>(
-      "/livox/imu_192_168_1_118", 200,
-      std::bind(&MergeCloudNode::imuCallback, this, _1));
+      imu_topic, 200,
+      std::bind(&DataCombineNode::imuCallback, this, _1));
 
-    RCLCPP_INFO(this->get_logger(), "MergeCloudNode with Queue Sync initialized successfully.");
+    RCLCPP_INFO(this->get_logger(), "DataCombineNode with Queue Sync initialized successfully.");
   }
 
 private:
   rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg>::SharedPtr cloud1_sub_;
   rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg>::SharedPtr cloud2_sub_;
   rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub_;
-  rclcpp::Publisher<livox_ros_driver2::msg::CustomMsg>::SharedPtr merged_cloud_pub_;
+  rclcpp::Publisher<livox_ros_driver2::msg::CustomMsg>::SharedPtr combined_cloud_pub_;
   rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr imu_pub_;
 
   std::deque<livox_ros_driver2::msg::CustomMsg::ConstSharedPtr> cloud1_queue_;
@@ -189,7 +208,7 @@ private:
     }
 
     custom_msg.point_num = custom_msg.points.size();
-    merged_cloud_pub_->publish(custom_msg);
+    combined_cloud_pub_->publish(custom_msg);
   }
 
   // IMU数据变换，不进行时间对齐，喂给SLAM算法内部做时间对齐处理，防止时间戳造假导致下游数据处理异常
@@ -243,7 +262,7 @@ private:
 int main(int argc, char** argv)
 {
   rclcpp::init(argc, argv);
-  auto node = std::make_shared<MergeCloudNode>();
+  auto node = std::make_shared<DataCombineNode>();
   rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;
