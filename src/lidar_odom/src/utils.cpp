@@ -9,8 +9,9 @@ pcl::PointCloud<pcl::PointXYZINormal>::Ptr Utils::livox2PCL(const livox_ros_driv
     // 在编程逻辑里面，每隔两个点取一个点，指的是从当前索引加2取下一个点，实际中间只差一个点
     for (int i = 0; i < point_num; i += filter_num)
     {
-        // 提取bit4和bit5做数据清洗，保留置信度高的点和正常点
+        // 提取bit4和bit5做数据清洗，保留中等置信度的点和高置信度的点
         if ((msg->points[i].line < 4) && ((msg->points[i].tag & 0x30) == 0x10 || (msg->points[i].tag & 0x30) == 0x00))
+        // if ((msg->points[i].line < N_SCANS) && ((msg->points[i].tag & 0x30) == 0x10))(fast-livo2 只保留中等置信度的点)
         {
             float x = msg->points[i].x;
             float y = msg->points[i].y;
@@ -23,8 +24,9 @@ pcl::PointCloud<pcl::PointXYZINormal>::Ptr Utils::livox2PCL(const livox_ros_driv
             p.y = y;
             p.z = z;
             p.intensity = msg->points[i].reflectivity;
-            // 原地定义curvature属性存进去数组里面
+            // 原地定义curvature属性存进去数组里面（fast-livo2 的官方释义是“use curvature as time of each laser points”）
             p.curvature = msg->points[i].offset_time / 1000000.0f;
+            // 激光雷达扫描可能会出现重复扫描点，需要进行过滤去重
             cloud->push_back(p);
         }
     }

@@ -15,29 +15,26 @@ def generate_launch_description():
     )
 
     config_path = PathJoinSubstitution(
-        [FindPackageShare("fastlio2"), "config", "lio.yaml"]
+        [FindPackageShare("fastlio2"), "config", "lio2.yaml"]
     )
 
     return launch.LaunchDescription(
         [
-            # 声明参数
             DeclareLaunchArgument(
                 "use_rviz",
-                default_value="false",
+                default_value="true",
                 description="Whether to start RViz"
             ),
 
-            # fastlio2
             launch_ros.actions.Node(
                 package="fastlio2",
-                namespace="fastlio2",
+                namespace="fastlio2_test",
                 executable="lio_node",
-                name="lio_node",
+                name="lio_node_test",
                 output="screen",
                 parameters=[{"config_path": config_path.perform(launch.LaunchContext())}]
             ),
 
-            # RViz（带条件）
             launch_ros.actions.Node(
                 package="rviz2",
                 namespace="fastlio2",
