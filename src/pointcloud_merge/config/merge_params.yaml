@@ -1,5 +1,0 @@
-lidar_fusion_node:
-  ros__parameters:
-    topic_lidar1: "/livox/lidar_192_168_1_118/pcd2"  # 需要被转换的雷达
-    topic_lidar2: "/livox/lidar_192_168_2_109/pcd2"  # 基准雷达
-    topic_merged: "/livox/merged_cloud"              # 输出的融合点云
