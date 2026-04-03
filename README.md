@@ -48,12 +48,16 @@ source ~/.bashrc
 
 # 配置PTP时间同步
 
-cd /3rdparty/linuxptp-3.1.1 && make
+cd 3rdparty/linuxptp-3.1.1 && make
 
 sudo make install && sudo ldconfig
+
+# 配置mavros
+
+cd 3rdparty/mavros && sudo bash scripts/pre_install.sh
+
+colcon build && echo "source 3rdparty/mavros/install/setup.bash" >> ~/.bashrc
 
 # 启动指令汇总
 
 TODO:将启动指令构建成为一个可执行脚本
-
-ros2 launch livox_ros_driver2 

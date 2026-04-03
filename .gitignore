@@ -3,5 +3,6 @@ log/
 install/
 
 3rdparty/Sophus/
+3rdparty/mavros/
 
 .vscode/
