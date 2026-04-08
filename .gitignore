@@ -6,3 +6,5 @@ install/
 3rdparty/mavros/
 
 .vscode/
+
+3rdparty/livox_ros_driver2_SDK2_Mid360s/livox_ros_driver2_v1.2.5/src/livox_ros_driver2_v1.2.5/build.sh
