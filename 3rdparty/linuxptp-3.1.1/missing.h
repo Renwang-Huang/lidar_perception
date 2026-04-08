@@ -50,17 +50,17 @@
 #define FD_TO_CLOCKID(fd)	((clockid_t) ((((unsigned int) ~fd) << 3) | CLOCKFD))
 #define CLOCKID_TO_FD(clk)	((unsigned int) ~((clk) >> 3))
 
-#ifndef HAVE_ONESTEP_SYNC
-enum _missing_hwtstamp_tx_types {
-	HWTSTAMP_TX_ONESTEP_SYNC = 2,
-};
-#endif
+// #ifndef HAVE_ONESTEP_SYNC
+// enum _missing_hwtstamp_tx_types {
+// 	HWTSTAMP_TX_ONESTEP_SYNC = 2,
+// };
+// #endif
 
-#ifndef HAVE_ONESTEP_P2P
-enum {
-	HWTSTAMP_TX_ONESTEP_P2P = 3,
-};
-#endif
+// #ifndef HAVE_ONESTEP_P2P
+// enum {
+// 	HWTSTAMP_TX_ONESTEP_P2P = 3,
+// };
+// #endif
 
 #ifdef PTP_EXTTS_REQUEST2
 #define PTP_EXTTS_REQUEST_FAILED "PTP_EXTTS_REQUEST2 failed: %m"
