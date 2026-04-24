@@ -23,6 +23,6 @@ sync_repo "https://github.com/strasdat/Sophus.git" "3rdparty/Sophus"
 
 echo -e "${GREEN}Sophus repository synchronized successfully!${NC}"
 
-sync_repo "https://github.com/Renwang-Huang/mavros" "3rdparty/mavros"
+sync_repo "https://github.com/mavlink/mavros" "3rdparty/mavros"
 
 echo -e "${GREEN}mavros repository synchronized successfully!${NC}"
