@@ -1,6 +1,7 @@
 #pragma once
 #include <Eigen/Eigen>
 #include <sophus/so3.hpp>
+
 #include "commons.h"
 
 using M12D = Eigen::Matrix<double, 12, 12>;

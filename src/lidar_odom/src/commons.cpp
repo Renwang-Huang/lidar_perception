@@ -1,4 +1,5 @@
 #include "commons.h"
+
 bool esti_plane(PointVec &points, const double &thresh, V4D &out)
 {
     Eigen::MatrixXd A(points.size(), 3);

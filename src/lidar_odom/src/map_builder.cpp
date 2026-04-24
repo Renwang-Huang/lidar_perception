@@ -1,4 +1,5 @@
-#include "map_builder.h"
+#include "map_builder/map_builder.h"
+
 MapBuilder::MapBuilder(Config &config, std::shared_ptr<IESKF> kf) : m_config(config), m_kf(kf)
 {
     m_imu_processor = std::make_shared<IMUProcessor>(config, kf);

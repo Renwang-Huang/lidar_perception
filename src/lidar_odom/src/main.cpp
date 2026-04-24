@@ -5,14 +5,6 @@
 #include <iostream>
 #include <chrono>
 
-#include <rclcpp/rclcpp.hpp>
-#include <sensor_msgs/msg/imu.hpp>
-#include <livox_ros_driver2/msg/custom_msg.hpp>
-
-#include "utils.h"
-#include "map_builder/commons.h"
-#include "map_builder/map_builder.h"
-
 #include <pcl_conversions/pcl_conversions.h>
 #include "tf2_ros/transform_broadcaster.h"
 #include <geometry_msgs/msg/transform_stamped.hpp>
@@ -21,6 +13,14 @@
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <yaml-cpp/yaml.h>
 
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/imu.hpp>
+#include <livox_ros_driver2/msg/custom_msg.hpp>
+
+#include "utils.h"
+#include "commons.h"
+#include "map_builder/map_builder.h"
+
 using namespace std::chrono_literals;
 
 struct NodeConfig
@@ -28,7 +28,7 @@ struct NodeConfig
     std::string imu_topic = "/livox/imu";
     std::string lidar_topic = "/livox/lidar";
     std::string body_frame = "body";
-    std::string world_frame = "lidar";
+    std::string world_frame = "world";
     bool print_time_cost = false;
 };
 
@@ -47,18 +47,17 @@ struct StateData
 class LIONode : public rclcpp::Node
 {
 public:
-    LIONode() : Node("lio_node")
+    LIONode() : Node("odom_node")
     {
-        RCLCPP_INFO(this->get_logger(), "LIO Node Started");
         loadParameters();
 
         m_imu_sub = this->create_subscription<sensor_msgs::msg::Imu>(m_node_config.imu_topic, 10, std::bind(&LIONode::imuCB, this, std::placeholders::_1));
         m_lidar_sub = this->create_subscription<livox_ros_driver2::msg::CustomMsg>(m_node_config.lidar_topic, 10, std::bind(&LIONode::lidarCB, this, std::placeholders::_1));
 
-        m_body_cloud_pub = this->create_publisher<sensor_msgs::msg::PointCloud2>("body_cloud", 10000);
-        m_world_cloud_pub = this->create_publisher<sensor_msgs::msg::PointCloud2>("world_cloud", 10000);
-        m_path_pub = this->create_publisher<nav_msgs::msg::Path>("lio_path", 10000);
-        m_odom_pub = this->create_publisher<nav_msgs::msg::Odometry>("lio_odom", 10000);
+        m_body_cloud_pub = this->create_publisher<sensor_msgs::msg::PointCloud2>("body_cloud", 1000);
+        m_world_cloud_pub = this->create_publisher<sensor_msgs::msg::PointCloud2>("world_cloud", 1000);
+        m_path_pub = this->create_publisher<nav_msgs::msg::Path>("lio_path", 1000);
+        m_odom_pub = this->create_publisher<nav_msgs::msg::Odometry>("lio_odom", 1000);
         m_tf_broadcaster = std::make_shared<tf2_ros::TransformBroadcaster>(*this);
 
         m_state_data.path.poses.clear();
@@ -74,15 +73,8 @@ public:
         this->declare_parameter("config_path", "");
         std::string config_path;
         this->get_parameter<std::string>("config_path", config_path);
-
         YAML::Node config = YAML::LoadFile(config_path);
-        if (!config)
-        {
-            RCLCPP_WARN(this->get_logger(), "FAIL TO LOAD YAML FILE!");
-            return;
-        }
-
-        RCLCPP_INFO(this->get_logger(), "LOAD FROM YAML CONFIG PATH: %s", config_path.c_str());
+        if (!config) return;
 
         m_node_config.imu_topic = config["imu_topic"].as<std::string>();
         m_node_config.lidar_topic = config["lidar_topic"].as<std::string>();
@@ -139,11 +131,13 @@ public:
         CloudType::Ptr cloud = Utils::livox2PCL(msg, m_builder_config.lidar_filter_num, m_builder_config.lidar_min_range, m_builder_config.lidar_max_range);
         std::lock_guard<std::mutex> lock(m_state_data.lidar_mutex);
         double timestamp = Utils::getSec(msg->header);
+
         if (timestamp < m_state_data.last_lidar_time)
         {
             RCLCPP_WARN(this->get_logger(), "Lidar Message is out of order");
             std::deque<std::pair<double, pcl::PointCloud<pcl::PointXYZINormal>::Ptr>>().swap(m_state_data.lidar_buffer);
         }
+        
         m_state_data.lidar_buffer.emplace_back(timestamp, cloud);
         m_state_data.last_lidar_time = timestamp;
     }
@@ -186,8 +180,8 @@ public:
 
     void publishCloud(rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub, CloudType::Ptr cloud, std::string frame_id, const double &time)
     {
-        if (pub->get_subscription_count() <= 0)
-            return;
+        if (pub->get_subscription_count() <= 0) return;
+
         sensor_msgs::msg::PointCloud2 cloud_msg;
         pcl::toROSMsg(*cloud, cloud_msg);
         cloud_msg.header.frame_id = frame_id;
@@ -197,8 +191,8 @@ public:
 
     void publishOdometry(rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub, std::string frame_id, std::string child_frame, const double &time)
     {
-        if (odom_pub->get_subscription_count() <= 0)
-            return;
+        if (odom_pub->get_subscription_count() <= 0) return;
+
         nav_msgs::msg::Odometry odom;
         odom.header.frame_id = frame_id;
         odom.header.stamp = Utils::getTime(time);
@@ -221,8 +215,8 @@ public:
 
     void publishPath(rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr path_pub, std::string frame_id, const double &time)
     {
-        if (path_pub->get_subscription_count() <= 0)
-            return;
+        if (path_pub->get_subscription_count() <= 0) return;
+
         geometry_msgs::msg::PoseStamped pose;
         pose.header.frame_id = frame_id;
         pose.header.stamp = Utils::getTime(time);
@@ -258,8 +252,7 @@ public:
 
     void timerCB()
     {
-        if (!syncPackage())
-            return;
+        if (!syncPackage()) return;
             
         auto t1 = std::chrono::high_resolution_clock::now();
         m_builder->process(m_package);
@@ -271,8 +264,7 @@ public:
             RCLCPP_WARN(this->get_logger(), "Time cost: %.2f ms", time_used);
         }
 
-        if (m_builder->status() != BuilderStatus::MAPPING)
-            return;
+        if (m_builder->status() != BuilderStatus::MAPPING) return;
 
         broadCastTF(m_tf_broadcaster, m_node_config.world_frame, m_node_config.body_frame, m_package.cloud_end_time);
 

@@ -1,4 +1,4 @@
-#include "lidar_processor.h"
+#include "lidar_process/lidar_processor.h"
 
 LidarProcessor::LidarProcessor(Config &config, std::shared_ptr<IESKF> kf) : m_config(config), m_kf(kf)
 {

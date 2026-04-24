@@ -1,4 +1,4 @@
-#include "imu_processor.h"
+#include "imu_process/imu_processor.h"
 
 IMUProcessor::IMUProcessor(Config &config, std::shared_ptr<IESKF> kf) : m_config(config), m_kf(kf)
 {
