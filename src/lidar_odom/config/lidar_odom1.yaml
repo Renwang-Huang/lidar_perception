@@ -3,6 +3,7 @@ lidar_topic: /livox/lidar_192_168_2_144
 body_frameid: body
 world_frameid: world
 
+is_custommsg: true
 print_time_cost: false
 
 lidar_filter_num: 2 # This parameter was previously set to 6

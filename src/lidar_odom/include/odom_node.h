@@ -34,6 +34,7 @@ struct NodeConfig
     std::string body_frame = "body";
     std::string world_frame = "world";
     bool print_time_cost = false;
+    bool is_custommsg = true;
 };
 
 struct StateData
@@ -58,6 +59,7 @@ private:
     void loadParameters();
     void ImuCallback(const sensor_msgs::msg::Imu::SharedPtr msg);
     void LidarCallback(const livox_ros_driver2::msg::CustomMsg::SharedPtr msg);
+    void PointCloud2Callback(const sensor_msgs::msg::PointCloud2::SharedPtr msg);
     bool syncPackage();
     void publishCloud(rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub,
                       CloudType::Ptr cloud, std::string frame_id, const double &time);
@@ -71,6 +73,7 @@ private:
 
     rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg>::SharedPtr lidar_sub;
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub;
+    rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr pointcloud2_sub;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr body_cloud_pub;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr world_cloud_pub;
     rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr path_pub;

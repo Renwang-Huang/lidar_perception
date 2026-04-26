@@ -11,8 +11,15 @@ OdomNode::OdomNode() : Node("odom_node")
 
     imu_sub = this->create_subscription<sensor_msgs::msg::Imu>(
         node_config.imu_topic, 100, std::bind(&OdomNode::ImuCallback, this, std::placeholders::_1));
-    lidar_sub = this->create_subscription<livox_ros_driver2::msg::CustomMsg>(
-        node_config.lidar_topic, 100, std::bind(&OdomNode::LidarCallback, this, std::placeholders::_1));
+    
+    if (!node_config.is_custommsg)
+    {
+        pointcloud2_sub = this->create_subscription<sensor_msgs::msg::PointCloud2>(
+            node_config.lidar_topic, 100, std::bind(&OdomNode::PointCloud2Callback, this, std::placeholders::_1));
+    }else{
+        lidar_sub = this->create_subscription<livox_ros_driver2::msg::CustomMsg>(
+            node_config.lidar_topic, 100, std::bind(&OdomNode::LidarCallback, this, std::placeholders::_1));
+    }
 
     body_cloud_pub = this->create_publisher<sensor_msgs::msg::PointCloud2>("body_cloud", 1000);
     world_cloud_pub = this->create_publisher<sensor_msgs::msg::PointCloud2>("world_cloud", 1000);
@@ -46,7 +53,8 @@ void OdomNode::loadParameters()
     node_config.lidar_topic = config["lidar_topic"].as<std::string>();
     node_config.body_frame = config["body_frameid"].as<std::string>();
     node_config.world_frame = config["world_frameid"].as<std::string>();
-
+    
+    node_config.is_custommsg = config["is_custommsg"].as<bool>();
     node_config.print_time_cost = config["print_time_cost"].as<bool>();
 
     builder_config.lidar_filter_num = config["lidar_filter_num"].as<int>();
@@ -109,6 +117,23 @@ void OdomNode::LidarCallback(const livox_ros_driver2::msg::CustomMsg::SharedPtr 
     if (timestamp < state_data.last_lidar_time)
     {
         RCLCPP_WARN(this->get_logger(), "Lidar Message is out of order");
+        std::deque<std::pair<double, CloudType::Ptr>>().swap(state_data.lidar_buffer);
+    }
+
+    state_data.lidar_buffer.emplace_back(timestamp, cloud);
+    state_data.last_lidar_time = timestamp;
+}
+
+void OdomNode::PointCloud2Callback(const sensor_msgs::msg::PointCloud2::SharedPtr msg)
+{
+    CloudType::Ptr cloud = Utils::pointcloud2ToPCL(msg, builder_config.lidar_filter_num,
+                                                   builder_config.lidar_min_range, builder_config.lidar_max_range);
+
+    std::lock_guard<std::mutex> lock(state_data.lidar_mutex);
+    double timestamp = Utils::getSec(msg->header);
+
+    if (timestamp < state_data.last_lidar_time) {
+        RCLCPP_WARN(this->get_logger(), "Lidar PointCloud2 Message is out of order");
         std::deque<std::pair<double, CloudType::Ptr>>().swap(state_data.lidar_buffer);
     }
 

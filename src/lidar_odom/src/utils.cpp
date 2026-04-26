@@ -1,6 +1,20 @@
 #include "utils.h"
 
-pcl::PointCloud<pcl::PointXYZINormal>::Ptr Utils::livox2PCL(const livox_ros_driver2::msg::CustomMsg::SharedPtr msg, int filter_num, double min_range, double max_range)
+// https://github.com/Livox-SDK/livox_ros_driver2/blob/master/src/lddc.cpp
+#pragma pack(push, 1)
+struct LivoxPointXyzrtlt {
+    float x;            // offset 0
+    float y;            // offset 4
+    float z;            // offset 8
+    float intensity;    // offset 12
+    uint8_t tag;        // offset 16
+    uint8_t line;       // offset 17
+    double timestamp;   // offset 18
+};
+#pragma pack(pop)
+
+pcl::PointCloud<pcl::PointXYZINormal>::Ptr Utils::livox2PCL(const livox_ros_driver2::msg::CustomMsg::SharedPtr msg, 
+                                                            int filter_num, double min_range, double max_range)
 {
     pcl::PointCloud<pcl::PointXYZINormal>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZINormal>);
     int point_num = msg->point_num;
@@ -27,6 +41,38 @@ pcl::PointCloud<pcl::PointXYZINormal>::Ptr Utils::livox2PCL(const livox_ros_driv
             // 原地定义curvature属性存进去数组里面（fast-livo2 的官方释义是“use curvature as time of each laser points”）
             p.curvature = msg->points[i].offset_time / 1000000.0f;
             // 激光雷达扫描可能会出现重复扫描点，需要进行过滤去重
+            cloud->push_back(p);
+        }
+    }
+    return cloud;
+}
+
+pcl::PointCloud<pcl::PointXYZINormal>::Ptr Utils::pointcloud2ToPCL(const sensor_msgs::msg::PointCloud2::SharedPtr msg,
+                                                                   int filter_num, double min_range, double max_range)
+{
+    pcl::PointCloud<pcl::PointXYZINormal>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZINormal>);
+    
+    const uint8_t* data_ptr = msg->data.data();
+    const size_t point_num = msg->width * msg->height;
+    cloud->reserve(point_num / filter_num + 1);
+
+    for (size_t i = 0; i < point_num; i += filter_num) {
+        const LivoxPointXyzrtlt* point = reinterpret_cast<const LivoxPointXyzrtlt*>(data_ptr + i * msg->point_step);
+
+        if ((point->line < 4) && ((point->tag & 0x30) == 0x10 || (point->tag & 0x30) == 0x00)) {
+            float x = point->x;
+            float y = point->y;
+            float z = point->z;
+
+            if (x * x + y * y + z * z < min_range * min_range || x * x + y * y + z * z > max_range * max_range)
+                continue;
+
+            pcl::PointXYZINormal p;
+            p.x = x;
+            p.y = y;
+            p.z = z;
+            p.intensity = point->intensity;
+            p.curvature = static_cast<float>(point->timestamp / 1000000.0);
             cloud->push_back(p);
         }
     }
