@@ -1,94 +1,62 @@
-import rospy
+#!/usr/bin/env python3
+
+import rclpy
+from rclpy.node import Node
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import PoseStamped
-import tf.transformations as tft
-import numpy as np
 
-
-class OdometryToMavros:
+class HumbleOdomRelay(Node):
     def __init__(self):
-        rospy.init_node('odom_to_mavros', anonymous=True)
-
-        self.init_flag = False
-
-        self.latest_q_px4 = None
-
-        self.q_align = np.array([0.0, 0.0, 0.0, 1.0])
-        self.rot_matrix = np.eye(3)
-
-        self.vision_pub = rospy.Publisher(
-            '/mavros/vision_pose/pose', PoseStamped, queue_size=10)
-
-        rospy.Subscriber(
-            '/mavros/local_position/odom', Odometry, self.px4_odom_callback)
-
-        rospy.Subscriber(
-            '/Odometry', Odometry, self.odom_callback, queue_size=10)
-
-        rospy.loginfo("Waiting for synchronized PX4 & Lidar odometry to initialize FULL rotation alignment...")
-
-    def px4_odom_callback(self, msg):
-        self.latest_q_px4 = [
-            msg.pose.pose.orientation.x,
-            msg.pose.pose.orientation.y,
-            msg.pose.pose.orientation.z,
-            msg.pose.pose.orientation.w
-        ]
+        super().__init__('humble_odom_relay_node')
+        
+        self.publisher_ = self.create_publisher(
+            PoseStamped, 
+            '/mavros/vision_pose/pose', 
+            10
+        )
+        
+        self.subscription = self.create_subscription(
+            Odometry,
+            '/lidar_odom/Odometry',
+            self.odom_callback,
+            10
+        )
 
     def odom_callback(self, msg):
-        if self.latest_q_px4 is None:
-            return
 
-        q_lidar = [
-            msg.pose.pose.orientation.x,
-            msg.pose.pose.orientation.y,
-            msg.pose.pose.orientation.z,
-            msg.pose.pose.orientation.w
-        ]
+        target_struct = PoseStamped()
+        
+        target_struct.header.stamp = msg.header.stamp
+        target_struct.header.frame_id = msg.header.frame_id
+        
+        target_struct.pose.position.x = msg.pose.pose.position.x
+        target_struct.pose.position.y = msg.pose.pose.position.y
+        target_struct.pose.position.z = msg.pose.pose.position.z
 
-        if not self.init_flag:
-            q_px4 = self.latest_q_px4
+        ox = msg.pose.pose.orientation.x
+        oy = msg.pose.pose.orientation.y
+        oz = msg.pose.pose.orientation.z
+        ow = msg.pose.pose.orientation.w
+        
+        target_struct.pose.orientation.x = ox * 0.7071 - ow * 0.7071
+        target_struct.pose.orientation.y = oy * 0.7071 - oz * 0.7071
+        target_struct.pose.orientation.z = oz * 0.7071 + oy * 0.7071
+        target_struct.pose.orientation.w = ow * 0.7071 + ox * 0.7071
 
-            q_lidar_inv = tft.quaternion_inverse(q_lidar)
+        self.publisher_.publish(target_struct)
 
-            self.q_align = tft.quaternion_multiply(q_px4, q_lidar_inv)
-
-            self.rot_matrix = tft.quaternion_matrix(self.q_align)[:3, :3]
-
-            self.init_flag = True
-
-            rospy.loginfo("FULL ROTATION alignment initialized!")
-            return
-
-        p_lidar = np.array([
-            msg.pose.pose.position.x,
-            msg.pose.pose.position.y,
-            msg.pose.pose.position.z
-        ])
-
-        p_enu = np.dot(self.rot_matrix, p_lidar)
-
-        q_enu = tft.quaternion_multiply(self.q_align, q_lidar)
-
-        vision = PoseStamped()
-        vision.header.stamp = msg.header.stamp
-        vision.header.frame_id = "map"
-
-        vision.pose.position.x = p_enu[0]
-        vision.pose.position.y = p_enu[1]
-        vision.pose.position.z = p_enu[2]
-
-        vision.pose.orientation.x = q_enu[0]
-        vision.pose.orientation.y = q_enu[1]
-        vision.pose.orientation.z = q_enu[2]
-        vision.pose.orientation.w = q_enu[3]
-
-        self.vision_pub.publish(vision)
-
+def main(args=None):
+    rclpy.init(args=args)
+    
+    node = HumbleOdomRelay()
+    
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        node.get_logger().info('Ctrl+C...')
+    finally:
+        node.destroy_node()
+        rclpy.try_shutdown()
 
 if __name__ == '__main__':
-    try:
-        OdometryToMavros()
-        rospy.spin()
-    except rospy.ROSInterruptException:
-        pass
+    main()
