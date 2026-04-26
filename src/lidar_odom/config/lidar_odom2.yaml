@@ -3,11 +3,12 @@ lidar_topic: /livox/lidar
 body_frameid: body
 world_frameid: world
 
+is_custommsg: true
 print_time_cost: false
 
-lidar_filter_num: 2
+lidar_filter_num: 3
 lidar_min_range: 0.8
-lidar_max_range: 30.0
+lidar_max_range: 40.0
 scan_resolution: 0.15
 map_resolution: 0.3
 
@@ -15,8 +16,8 @@ cube_len: 300
 det_range: 60
 move_thresh: 1.5
 
-na: 0.5
-ng: 0.3
+na: 0.1
+ng: 0.1
 nba: 0.0001
 nbg: 0.0001
 
