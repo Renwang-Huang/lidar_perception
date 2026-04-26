@@ -1,6 +1,8 @@
-#pragma once
-#include "imu_process/imu_processor.h"
-#include "lidar_process/lidar_processor.h"
+#ifndef MAP_BUILDER_H
+#define MAP_BUILDER_H
+
+#include "imu_process/imu_process.h"
+#include "lidar_process/lidar_process.h"
 
 enum BuilderStatus
 {
@@ -19,9 +21,11 @@ public:
     std::shared_ptr<LidarProcessor> lidar_processor(){return m_lidar_processor;}
 
 private:
-    Config m_config;
+    Config config;
     BuilderStatus m_status;
-    std::shared_ptr<IESKF> m_kf;
-    std::shared_ptr<IMUProcessor> m_imu_processor;
+    std::shared_ptr<IESKF> kf;
+    std::shared_ptr<IMUProcessor> imu_processor;
     std::shared_ptr<LidarProcessor> m_lidar_processor;
 };
+
+#endif // MAP_BUILDER_H

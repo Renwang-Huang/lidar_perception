@@ -1,4 +1,4 @@
-#include "lidar_process/lidar_processor.h"
+#include "lidar_process/lidar_process.h"
 
 LidarProcessor::LidarProcessor(Config &config, std::shared_ptr<IESKF> kf) : m_config(config), m_kf(kf)
 {
@@ -81,7 +81,6 @@ void LidarProcessor::trimCloudMap()
     PointVec points_history;
     m_ikdtree->acquire_removed_points(points_history);
 
-    // 删除局部地图之外的点云
     if (m_local_map.cub_to_rm.size() > 0)
         m_ikdtree->Delete_Point_Boxes(m_local_map.cub_to_rm);
     return;
@@ -104,7 +103,7 @@ void LidarProcessor::incrCloudMap()
         m_cloud_down_world->points[i].y = point(1);
         m_cloud_down_world->points[i].z = point(2);
         m_cloud_down_world->points[i].intensity = m_cloud_down_lidar->points[i].intensity;
-        // 如果该点附近没有近邻点则需要添加到地图中
+        
         if (m_nearest_points[i].empty())
         {
             point_to_add.push_back(m_cloud_down_world->points[i]);
@@ -118,7 +117,6 @@ void LidarProcessor::incrCloudMap()
         mid_point.y = std::floor(m_cloud_down_world->points[i].y / m_config.map_resolution) * m_config.map_resolution + 0.5 * m_config.map_resolution;
         mid_point.z = std::floor(m_cloud_down_world->points[i].z / m_config.map_resolution) * m_config.map_resolution + 0.5 * m_config.map_resolution;
 
-        // 如果该点所在的voxel没有点，则直接加入地图，且不需要降采样
         if (fabs(points_near[0].x - mid_point.x) > 0.5 * m_config.map_resolution && fabs(points_near[0].y - mid_point.y) > 0.5 * m_config.map_resolution && fabs(points_near[0].z - mid_point.z) > 0.5 * m_config.map_resolution)
         {
             point_no_need_downsample.push_back(m_cloud_down_world->points[i]);
@@ -128,10 +126,9 @@ void LidarProcessor::incrCloudMap()
 
         for (int readd_i = 0; readd_i < m_config.near_search_num; readd_i++)
         {
-            // 如果该点的近邻点较少，则需要加入到地图中
             if (points_near.size() < static_cast<size_t>(m_config.near_search_num))
                 break;
-            // 如果该点的近邻点距离voxel中心点的距离比该点距离voxel中心点更近，则不需要加入该点
+            
             if (sq_dist(points_near[readd_i], mid_point) < dist)
             {
                 need_add = false;
@@ -158,6 +155,7 @@ void LidarProcessor::process(SyncPackage &package)
     //                       { V3D rot_delta = delta.block<3, 1>(0, 0);
     //                         V3D t_delta = delta.block<3, 1>(3, 0);
     //                         return (rot_delta.norm() * 57.3 < 0.01) && (t_delta.norm() * 100 < 0.015); });
+
     if (m_config.scan_resolution > 0.0)
     {
         m_scan_filter.setInputCloud(package.cloud);
@@ -167,6 +165,7 @@ void LidarProcessor::process(SyncPackage &package)
     {
         pcl::copyPointCloud(*package.cloud, *m_cloud_down_lidar);
     }
+    
     trimCloudMap();
     m_kf->update();
     incrCloudMap();

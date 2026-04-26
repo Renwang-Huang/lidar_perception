@@ -1,10 +1,12 @@
-#pragma once
+#ifndef LIDAR_PROCESSOR_H
+#define LIDAR_PROCESSOR_H
+
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/common/transforms.h>
 
 #include "commons.h"
-#include "ieskf/ieskf.h"
-#include "ikd_tree/ikd_tree.h"
+#include "ieskf.h"
+#include "ikd_tree.h"
 
 struct LocalMap
 {
@@ -19,13 +21,9 @@ public:
     LidarProcessor(Config &config, std::shared_ptr<IESKF> kf);
 
     void trimCloudMap();
-
     void incrCloudMap();
-
     void initCloudMap(PointVec &point_vec);
-
     void process(SyncPackage &package);
-
     void updateLossFunc(State &state, SharedState &share_data);
 
     static CloudType::Ptr transformCloud(CloudType::Ptr inp, const M3D &r, const V3D &t);
@@ -47,3 +45,5 @@ private:
     std::vector<PointVec> m_nearest_points;
     pcl::VoxelGrid<PointType> m_scan_filter;
 };
+
+#endif // LIDAR_PROCESSOR_H

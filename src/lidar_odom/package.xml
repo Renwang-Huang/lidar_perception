@@ -18,9 +18,11 @@
   <depend>pcl_conversions</depend>
   <depend>livox_ros_driver2</depend>
   <depend>geometry_msgs</depend>
-  
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
+
+  <depend>libyaml-cpp-dev</depend>
+  <depend>libpcl-all-dev</depend>
+  <depend>libeigen3-dev</depend>
+  <depend>libsophus-dev</depend>
 
   <export>
     <build_type>ament_cmake</build_type>

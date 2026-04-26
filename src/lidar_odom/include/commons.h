@@ -1,4 +1,6 @@
-#pragma once
+#ifndef COMMONS_H
+#define COMMONS_H
+
 #include <Eigen/Eigen>
 #include <pcl/point_types.h>
 #include <pcl/point_cloud.h>
@@ -18,10 +20,8 @@ using V2F = Eigen::Vector2f;
 using M4D = Eigen::Matrix4d;
 using V4D = Eigen::Vector4d;
 
-
 template <typename T>
 using Vec = std::vector<T>;
-
 
 bool esti_plane(PointVec &points, const double &thresh, V4D &out);
 
@@ -43,15 +43,18 @@ struct Config
     double ng = 0.01;
     double nba = 0.0001;
     double nbg = 0.0001;
+
     int imu_init_num = 20;
     int near_search_num = 5;
     int ieskf_max_iter = 5;
+
     bool gravity_align = true;
     bool esti_il = false;
-    M3D r_il = M3D::Identity();
-    V3D t_il = V3D::Zero();
 
     double lidar_cov_inv = 1000.0;
+
+    M3D r_il = M3D::Identity();
+    V3D t_il = V3D::Zero();
 };
 
 struct IMUData
@@ -84,3 +87,5 @@ struct SyncPackage
     double cloud_start_time = 0.0;
     double cloud_end_time = 0.0;
 };
+
+#endif // COMMONS_H
