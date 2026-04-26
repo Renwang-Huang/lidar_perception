@@ -1,0 +1,163 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /ENV1
+        - /ROGMap1
+      Splitter Ratio: 0.4043
+    Tree Height: 1252
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/ToolProperties
+    Name: Tool Properties
+    Splitter Ratio: 0.5886
+  - Class: rviz_common/Views
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz_common/Time
+    Name: Time
+    Sync Mode: 0
+    Sync Source: GlobalCloud
+
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Group
+      Name: ENV
+      Enabled: true
+      Displays:
+        - Class: rviz_default_plugins/PointCloud2
+          Name: DroneShape
+          Enabled: true
+          Topic:
+            Value: /quad1_pcl_render_node/uav_shape_cloud
+            Depth: 10
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+          Style: Spheres
+          [cite_start]Size (m): 0.01 [cite: 7]
+          Color Transformer: Intensity
+          Invert Rainbow: false
+          Use rainbow: true
+        - Class: rviz_default_plugins/PointCloud2
+          Name: CollisionCloud
+          Enabled: true
+          Topic:
+            Value: /quad1_pcl_render_node/collision_cloud
+            Depth: 10
+          Style: Spheres
+          [cite_start]Size (m): 0.2 [cite: 12]
+          Color: 239; 41; [cite_start]41 [cite: 9, 10]
+          Color Transformer: FlatColor
+        - Class: rviz_default_plugins/Axes
+          Name: Body
+          [cite_start]Enabled: false [cite: 13]
+          [cite_start]Reference Frame: drone [cite: 14]
+          Length: 0.3
+          Radius: 0.05
+        - Class: rviz_default_plugins/Grid
+          Name: Grid
+          [cite_start]Enabled: true [cite: 15]
+          [cite_start]Reference Frame: <Fixed Frame> [cite: 16]
+          Plane Cell Count: 40
+          Cell Size: 1
+          Color: 0; 0; [cite_start]0 [cite: 14, 15]
+        - Class: rviz_default_plugins/PointCloud2
+          Name: GlobalCloud
+          [cite_start]Enabled: true [cite: 18]
+          Topic:
+            Value: /map_generator/global_cloud
+            Depth: 10
+          Style: Boxes
+          [cite_start]Size (m): 0.1 [cite: 20]
+          Color Transformer: AxisColor
+          [cite_start]Axis: Z [cite: 17]
+        - Class: rviz_default_plugins/Marker
+          Name: Robot
+          [cite_start]Enabled: true [cite: 21]
+          Marker Topic: /odom_visualization/robot
+        - Class: rviz_default_plugins/PointCloud2
+          Name: LocalCloud
+          [cite_start]Enabled: true [cite: 24]
+          Topic:
+            Value: /cloud_registered
+            Depth: 10
+          Style: Points
+          [cite_start]Size (m): 0.07 [cite: 26]
+          Color: 173; 127; [cite_start]168 [cite: 23, 24]
+        - Class: rviz_default_plugins/Odometry
+          Name: Odometry
+          [cite_start]Enabled: false [cite: 32]
+          Topic:
+            Value: /lidar_slam/odom
+          Shape:
+            [cite_start]Value: Axes [cite: 34]
+            Axes Length: 2
+            Axes Radius: 0.5
+
+    - Class: rviz_default_plugins/Group
+      Name: ROGMap
+      [cite_start]Enabled: true [cite: 35]
+      Displays:
+        - Class: rviz_default_plugins/PointCloud2
+          Name: ESDF
+          [cite_start]Enabled: true [cite: 37]
+          Topic:
+            Value: /rm_node/rog_map/esdf
+          Style: Boxes
+          [cite_start]Size (m): 0.1 [cite: 39]
+        - Class: rviz_default_plugins/PointCloud2
+          Name: Occ
+          [cite_start]Enabled: true [cite: 41, 44]
+          Topic:
+            Value: /rm_node/rog_map/occ
+          Style: Boxes
+          [cite_start]Size (m): 0.1 [cite: 44]
+          Color: 245; 121; [cite_start]0 [cite: 41, 42]
+        - Class: rviz_default_plugins/PointCloud2
+          Name: InfOcc
+          [cite_start]Enabled: true [cite: 54]
+          Topic:
+            Value: /rm_node/rog_map/inf_occ
+          [cite_start]Alpha: 0.1 [cite: 50]
+          Style: Boxes
+          [cite_start]Size (m): 0.2 [cite: 54]
+
+    - Class: rviz_default_plugins/MarkerArray
+      Name: MarkerArray
+      [cite_start]Enabled: true [cite: 60]
+      Topic:
+        Value: /rm_node/rog_map/map_bound
+
+  Global Options:
+    Background Color: 255; 255; [cite_start]255 [cite: 62, 63]
+    [cite_start]Fixed Frame: world [cite: 63]
+    Frame Rate: 30
+
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/PublishPoint
+    - Class: rviz_default_plugins/Measure
+
+  Views:
+    Current:
+      Class: rviz_default_plugins/XYOrbit
+      [cite_start]Distance: 18.27 [cite: 64]
+      Focal Point:
+        [cite_start]X: -4.404 [cite: 64]
+        [cite_start]Y: 1.449 [cite: 64]
+        [cite_start]Z: 0 [cite: 65]
+      [cite_start]Pitch: 0.714 [cite: 65]
+      [cite_start]Yaw: 3.062 [cite: 65]
+      [cite_start]Target Frame: perfect_drone [cite: 65]
+
+Window Geometry:
+  [cite_start]Height: 1403 [cite: 74]
+  [cite_start]Width: 1440 [cite: 74]
+  [cite_start]X: 2560 [cite: 74]
+  [cite_start]Y: 0 [cite: 74]

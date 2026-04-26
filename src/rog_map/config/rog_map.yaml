@@ -1,0 +1,71 @@
+rm_node:
+  ros__parameters:
+    rog_map:
+      resolution: 0.1
+      inflation_resolution: 0.2
+      inflation_step: 1
+      unk_inflation_en: false
+      unk_inflation_step: 1
+      map_size: [50.0, 50.0, 6.0]
+      # If the map rolling is disable, the map origin [m] should be set.
+      fix_map_origin: [0.0, 0.0, 0.0]
+      frontier_extraction_en: true
+
+      # Virtual ceil and ground
+      virtual_ceil_height: 9999.0
+      virtual_ground_height: -9999.0
+
+      block_inf_pt: false
+      kd_tree_en: false
+      load_pcd_en: false
+
+      map_sliding:
+        enable: true
+        # The minimum distance [m] to slide the map.
+        threshold: 0.3
+
+      esdf:
+        enable: true
+        resolution: 0.1
+        # The range of esdf around the odom [m].
+        local_update_box: [5.0, 5.0, 3.0]
+
+      # ROS 2 Topics configuration
+      ros_callback:
+        enable: true
+        cloud_topic: "/cloud_registered"
+        odom_topic: "/Odometry"
+        odom_timeout: 2.0
+
+      visualization:
+        enable: true
+        # The rate of visualization [Hz]
+        time_rate: 10.0
+        frame_rate: 0.0
+        # visualization range along the odom [m].
+        range: [50.0, 50.0, 6.0]
+        frame_id: "camera_init"
+        pub_unknown_map_en: false
+
+      # Intensity filter
+      intensity_thresh: -10.0
+      point_filt_num: 15
+
+      # Probabilistc update
+      raycasting:
+        enable: true
+        blind_filter_en: false
+        blind_filter_dis: 1.0
+        batch_update_size: 1
+        local_update_box: [50.0, 50.0, 5.0]
+        # The range of raycasting [m].
+        ray_range: [0.0, 5.0]
+
+        p_min: 0.12
+        p_miss: 0.49
+        p_free: 0.499
+        p_occ: 0.85
+        p_hit: 0.9
+        p_max: 0.98
+        unk_thresh: 1.0
+        

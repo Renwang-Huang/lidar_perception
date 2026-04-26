@@ -6,5 +6,3 @@ install/
 3rdparty/mavros/
 
 .vscode/
-
-config/
