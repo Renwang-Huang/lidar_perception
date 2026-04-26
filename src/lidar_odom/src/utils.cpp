@@ -51,6 +51,9 @@ pcl::PointCloud<pcl::PointXYZINormal>::Ptr Utils::pointcloud2ToPCL(const sensor_
                                                                    int filter_num, double min_range, double max_range)
 {
     pcl::PointCloud<pcl::PointXYZINormal>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZINormal>);
+
+    // 提取本帧基准时间
+    double base_time = static_cast<double>(msg->header.stamp.sec) * 1e9 + static_cast<double>(msg->header.stamp.nanosec);
     
     const uint8_t* data_ptr = msg->data.data();
     const size_t point_num = msg->width * msg->height;
@@ -58,7 +61,6 @@ pcl::PointCloud<pcl::PointXYZINormal>::Ptr Utils::pointcloud2ToPCL(const sensor_
 
     for (size_t i = 0; i < point_num; i += filter_num) {
         const LivoxPointXyzrtlt* point = reinterpret_cast<const LivoxPointXyzrtlt*>(data_ptr + i * msg->point_step);
-
         if ((point->line < 4) && ((point->tag & 0x30) == 0x10 || (point->tag & 0x30) == 0x00)) {
             float x = point->x;
             float y = point->y;
@@ -72,7 +74,8 @@ pcl::PointCloud<pcl::PointXYZINormal>::Ptr Utils::pointcloud2ToPCL(const sensor_
             p.y = y;
             p.z = z;
             p.intensity = point->intensity;
-            p.curvature = static_cast<float>(point->timestamp / 1000000.0);
+            // p.curvature = static_cast<float>(point->timestamp / 1000000.0f);
+            p.curvature = static_cast<float>((point->timestamp - base_time) / 1000000.0f);
             cloud->push_back(p);
         }
     }
