@@ -30,8 +30,8 @@ sudo chmod +x build.sh
 git clone https://github.com/strasdat/Sophus.git
 cd Sophus && git checkout 1.22.10
 mkdir build && cd build
-cmake .. -DSOPHUS_USE_BASIC_LOGGING=ON
-make && sudo make install
+cmake .. -DSOPHUS_USE_BASIC_LOGGING=ON -DCMAKE_CXX_FLAGS="-Wno-error=array-bounds -Wno-error=dangling-pointer"
+make && sudo make install # make -j && sudo make install
 sudo ldconfig
 ```
 
