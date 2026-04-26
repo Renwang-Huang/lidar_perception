@@ -52,12 +52,16 @@ pcl::PointCloud<pcl::PointXYZINormal>::Ptr Utils::pointcloud2ToPCL(const sensor_
 {
     pcl::PointCloud<pcl::PointXYZINormal>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZINormal>);
 
-    // 提取本帧基准时间
-    double base_time = static_cast<double>(msg->header.stamp.sec) * 1e9 + static_cast<double>(msg->header.stamp.nanosec);
-    
     const uint8_t* data_ptr = msg->data.data();
     const size_t point_num = msg->width * msg->height;
     cloud->reserve(point_num / filter_num + 1);
+
+    // 提取本帧基准时间
+    // double base_time = static_cast<double>(msg->header.stamp.sec) * 1e9 + static_cast<double>(msg->header.stamp.nanosec);
+    
+    double base_time = 0.0;
+    const LivoxPointXyzrtlt* first_point = reinterpret_cast<const LivoxPointXyzrtlt*>(data_ptr);
+    base_time = first_point->timestamp;
 
     for (size_t i = 0; i < point_num; i += filter_num) {
         const LivoxPointXyzrtlt* point = reinterpret_cast<const LivoxPointXyzrtlt*>(data_ptr + i * msg->point_step);
