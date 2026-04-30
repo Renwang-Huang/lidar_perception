@@ -30,10 +30,18 @@ find_package(pcl_conversions REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
 
-file(GLOB_RECURSE srcs CONFIGURE_DEPENDS src/rog_map/*.cpp include/*.h include/*.hpp include/*.cpp)
+set(ROG_MAP_LIBRARY_SRCS
+    src/counter_map.cpp  
+    src/inf_map.cpp   
+    src/rog_map.cpp  
+    src/sliding_map.cpp
+    src/esdf_map.cpp     
+    src/prob_map.cpp
+    include/utils/raycaster.cpp
+)
 
 add_library(${PROJECT_NAME} STATIC 
-    ${srcs}
+    ${ROG_MAP_LIBRARY_SRCS}
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC
