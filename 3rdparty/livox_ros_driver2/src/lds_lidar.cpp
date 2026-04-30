@@ -74,8 +74,6 @@ LdsLidar::~LdsLidar() {}
 
 void LdsLidar::ResetLdsLidar(void) { ResetLds(kSourceRawLidar); }
 
-
-
 bool LdsLidar::InitLdsLidar(const std::string& path_name) {
   if (is_initialized_) {
     printf("Lds is already inited!\n");
@@ -127,9 +125,8 @@ bool LdsLidar::ParseSummaryConfig() {
 }
 
 bool LdsLidar::InitLivoxLidar() {
-#ifdef BUILDING_ROS2
+  // 无条件在 ROS 2 下执行关闭 SDK Console Logger
   DisableLivoxSdkConsoleLogger();
-#endif
 
   // parse user config
   LivoxLidarConfigParser parser(path_);
