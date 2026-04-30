@@ -13,6 +13,11 @@ find_package(livox_ros_driver2 REQUIRED)
 
 add_executable(data_combine_node src/datacombine.cpp)
 
+target_include_directories(data_combine_node PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
 ament_target_dependencies(
   data_combine_node
   rclcpp
@@ -36,6 +41,10 @@ install(DIRECTORY launch/
 
 install(DIRECTORY config/
   DESTINATION share/${PROJECT_NAME}/config
+)
+
+install(DIRECTORY include/
+  DESTINATION include
 )
 
 if(BUILD_TESTING)

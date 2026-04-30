@@ -6,19 +6,15 @@
   <version>2.0.0</version>
   <description>Two Mid360 Lidar Data Combiner and IMU Synchronizer</description>
 
-  <maintainer email="RenwangHuangX@gmail.com">Renwang Huang</maintainer>
-  <license>MIT</license>
+  <maintainer email="RenwangHuangX@gmail.com">Renwang-Huang</maintainer>
+  <license>TODO</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <depend>rclcpp</depend>
+  <depend>eigen</depend>
   <depend>sensor_msgs</depend>
   <depend>livox_ros_driver2</depend>
-
-  <depend>eigen</depend>
-
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
