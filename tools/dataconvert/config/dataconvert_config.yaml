@@ -1,7 +1,0 @@
-livox_to_pointcloud2:
-  ros__parameters:
-    topics:
-  
-      sub_topic: "/livox/lidar_192_168_2_144"
-      pub_topic: "/converted_pointcloud2_output"
-      
