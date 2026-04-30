@@ -6,3 +6,7 @@ install/
 3rdparty/mavros/
 
 .vscode/
+
+tools/livox_viewer2_v2.3.0/LivoxViewer2.sh
+
+tools/livox_viewer2_v2.3.0/LivoxViewer2/Binaries/Linux/LivoxViewer2

@@ -1,0 +1,1478 @@
+﻿Log file open, 05/01/26 01:51:13
+LogPakFile: Display: Found Pak file ../../../LivoxViewer2/Content/Paks/LivoxViewer2-LinuxNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../LivoxViewer2/Content/Paks/LivoxViewer2-LinuxNoEditor.pak.
+LogPlatformFile: Using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 17 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.039562
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +8:00, Platform Override: ''
+LogPluginManager: Mounting plugin EasyFileDialog
+LogPluginManager: Mounting plugin EasyEmail
+LogPluginManager: Mounting plugin OnScreenLog
+LogPluginManager: Mounting plugin SimpleFTPClient
+LogPluginManager: Mounting plugin ColorWheelPlugin
+LogPluginManager: Mounting plugin RenderDocPlugin
+LogPluginManager: Mounting plugin NativizedAssets
+LogPluginManager: Mounting plugin EasyNotification
+LogPluginManager: Mounting plugin LivoxSDK2
+LogPluginManager: Mounting plugin Ltrace
+LogPluginManager: Mounting plugin pcls
+LogPluginManager: Mounting plugin RuntimeTransformer
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogInit: Using libcurl 7.65.3-DEV
+LogInit:  - built for x86_64-unknown-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.1.1c
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-0
+LogInit: Engine Version: 4.25.4-0+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-0+++UE4+Release-4.25
+LogInit: Net CL: 0
+LogInit: OS: GenericOSVersionLabel (GenericOSSubVersionLabel), CPU: AMD Ryzen 7 7735H with Radeon Graphics, GPU: GenericGPUBrand
+LogInit: Compiled (64-bit): Jul 20 2022 17:30:13
+LogInit: Compiled with Clang: 9.0.1 
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: /home/renwang/data_storage/lidar_perception/tools/livox_viewer2_v2.3.0/LivoxViewer2/Binaries/Linux/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 100000000 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.Mobile.DisableVertexFog:1]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxMobileCascades:2]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.MobileMSAA:1]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.Mobile.UseLegacyShadingModel:0]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.Mobile.AllowDitheredLODTransition:0]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.Mobile.AllowSoftwareOcclusion:0]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.Mobile.VirtualTextures:0]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.DiscardUnusedQuality:0]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.AllowOcclusionQueries:1]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForLights:0.030000]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForDepthPrepass:0.030000]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForCSMDepth:0.010000]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.PrecomputedVisibilityWarning:0]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.TextureStreaming:1]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[Compat.UseDXT5NormalMaps:0]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.VirtualTextures:0]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.VirtualTexturedLightmaps:0]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.VT.TileSize:128]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.VT.TileBorderSize:4]]
+[2026.04.30-17.51.13:913][  0]LogConfig: Setting CVar [[r.vt.FeedbackFactor:16]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.VT.EnableCompressZlib:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.VT.EnableCompressCrunch:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.ClearCoatNormal:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.AnisotropicBRDF:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.ReflectionCaptureResolution:128]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.ReflectionEnvironmentLightmapMixBasedOnRoughness:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.ForwardShading:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.VertexFoggingForOpaque:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.NormalMapsForStaticLighting:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.GenerateMeshDistanceFields:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.EightBit:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.GenerateLandscapeGIData:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.Compress:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.TessellationAdaptivePixelsPerTriangle:48.000000]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.TranslucentSortPolicy:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.CustomDepth:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.CustomDepthTemporalAAJitter:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.PostProcessing.PropagateAlpha:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultFeature.Bloom:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Method:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Bias:1.000000]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.UsePreExposure:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.EyeAdaptation.EditorOnly:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultFeature.MotionBlur:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultFeature.LensFlare:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.TemporalAA.Upsampling:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SSGI.Enable:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultFeature.AntiAliasing:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultFeature.LightUnits:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DefaultBackBufferPixelFormat:4]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.Shadow.UnbuiltPreviewInGame:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.StencilForLODDither:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.EarlyZPass:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.EarlyZPassOnlyMaterialMasking:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.DBuffer:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.ClearSceneMethod:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.BasePassOutputsVelocity:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.VertexDeformationOutputsVelocity:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SelectiveBasePassOutputs:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeX:1024]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeY:1024]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.AllowGlobalClipPlane:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.GBufferFormat:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.MorphTarget.Mode:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[vr.InstancedStereo:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.MobileHDR:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[vr.MobileMultiView:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.Mobile.UseHWsRGBEncoding:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[vr.RoundRobinOcclusion:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[vr.ODSCapture:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.MeshStreaming:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.WireframeCullThreshold:5.000000]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.RayTracing:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.RayTracing.UseTextureLod:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SupportStationarySkylight:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SupportLowQualityLightmaps:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SupportPointLightWholeSceneShadows:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SupportAtmosphericFog:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SupportSkyAtmosphere:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SupportSkyAtmosphereAffectsHeightFog:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:0]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SkinCache.DefaultBehavior:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.SkinCache.SceneMemoryLimitInMB:128.000000]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.Mobile.EnableStaticAndCSMShadowReceivers:1]]
+[2026.04.30-17.51.13:914][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableLightCSMShaderCulling:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[r.Mobile.AllowDistanceFieldShadows:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[r.Mobile.AllowMovableDirectionalLights:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[r.MobileNumDynamicPointLights:4]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[r.MobileDynamicPointLightsUseStaticBranch:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableSpotlights:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[r.GPUSkin.Support16BitBoneIndex:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[r.GPUSkin.Limit2BoneInfluences:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[r.SupportDepthOnlyIndexBuffers:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[r.SupportReversedIndexBuffers:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[r.SupportMaterialLayers:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[r.LightPropagationVolume:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.04.30-17.51.13:915][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:-1.000000]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:100000000]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Setting CVar [[gc.MaxObjectsInGame:100000000]]
+[2026.04.30-17.51.13:915][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.04.30-17.51.13:915][  0]LogInit: Initializing SDL.
+[2026.04.30-17.51.14:128][  0]LogInit: Initialized SDL 2.0.10 revision: 12952 (hg-12952:bc90ce38f1e2) (compiled against 2.0.10)
+[2026.04.30-17.51.14:128][  0]LogInit: Using SDL video driver 'x11'
+[2026.04.30-17.51.14:130][  0]LogInit: Display metrics:
+[2026.04.30-17.51.14:130][  0]LogInit:   PrimaryDisplayWidth: 2560
+[2026.04.30-17.51.14:130][  0]LogInit:   PrimaryDisplayHeight: 1440
+[2026.04.30-17.51.14:130][  0]LogInit:   PrimaryDisplayWorkAreaRect:
+[2026.04.30-17.51.14:130][  0]LogInit:     Left=166, Top=54, Right=2560, Bottom=1440
+[2026.04.30-17.51.14:130][  0]LogInit:   VirtualDisplayRect:
+[2026.04.30-17.51.14:130][  0]LogInit:     Left=166, Top=54, Right=2560, Bottom=1440
+[2026.04.30-17.51.14:130][  0]LogInit:   TitleSafePaddingSize: X=0.000 Y=0.000 Z=0.000 W=0.000
+[2026.04.30-17.51.14:130][  0]LogInit:   ActionSafePaddingSize: X=0.000 Y=0.000 Z=0.000 W=0.000
+[2026.04.30-17.51.14:131][  0]LogInit:   Number of monitors: 1
+[2026.04.30-17.51.14:131][  0]LogInit:     Monitor 0
+[2026.04.30-17.51.14:131][  0]LogInit:       Name: 0
+[2026.04.30-17.51.14:131][  0]LogInit:       ID: display0
+[2026.04.30-17.51.14:131][  0]LogInit:       NativeWidth: 2560
+[2026.04.30-17.51.14:131][  0]LogInit:       NativeHeight: 1440
+[2026.04.30-17.51.14:131][  0]LogInit:       bIsPrimary: true
+[2026.04.30-17.51.14:131][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.04.30-17.51.14:131][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2026.04.30-17.51.14:132][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2026.04.30-17.51.14:132][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.04.30-17.51.14:132][  0]LogInit: Applying CVar settings loaded from the selected device profile: [LinuxNoEditor]
+[2026.04.30-17.51.14:133][  0]LogHAL: Display: Platform has ~ 4 GB [15906521088 / 4294967296 / 15], which maps to Smallest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2026.04.30-17.51.14:133][  0]LogInit: Going up to parent DeviceProfile [Linux]
+[2026.04.30-17.51.14:133][  0]LogInit: Going up to parent DeviceProfile []
+[2026.04.30-17.51.14:133][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.04.30-17.51.14:133][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2026.04.30-17.51.14:134][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [../../../LivoxViewer2/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.04.30-17.51.14:134][  0]LogConfig: Setting CVar [[g.TimeoutForBlockOnRenderFence:60000]]
+[2026.04.30-17.51.14:134][  0]LogInit: Unix hardware info:
+[2026.04.30-17.51.14:134][  0]LogInit:  - we are the first instance of this executable
+[2026.04.30-17.51.14:134][  0]LogInit:  - this process' id (pid) is 23898, parent process' id (ppid) is 23891
+[2026.04.30-17.51.14:134][  0]LogInit:  - we are not running under debugger
+[2026.04.30-17.51.14:134][  0]LogInit:  - machine network name is 'renwang-Legion-R7000-ARP8'
+[2026.04.30-17.51.14:134][  0]LogInit:  - user name is 'renwang' (renwang)
+[2026.04.30-17.51.14:134][  0]LogInit:  - we're logged in locally
+[2026.04.30-17.51.14:134][  0]LogInit:  - we're running with rendering
+[2026.04.30-17.51.14:134][  0]LogInit:  - CPU: AuthenticAMD 'AMD Ryzen 7 7735H with Radeon Graphics' (signature: 0xA40F41)
+[2026.04.30-17.51.14:134][  0]LogInit:  - Number of physical cores available for the process: 8
+[2026.04.30-17.51.14:134][  0]LogInit:  - Number of logical cores available for the process: 16
+[2026.04.30-17.51.14:134][  0]LogInit:  - Cache line size: 64
+[2026.04.30-17.51.14:134][  0]LogInit:  - Memory allocator used: binned2
+[2026.04.30-17.51.14:134][  0]LogInit:  - This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+[2026.04.30-17.51.14:134][  0]LogInit:  - This is an internal build.
+[2026.04.30-17.51.14:134][  0]LogCore: Benchmarking clocks:
+[2026.04.30-17.51.14:134][  0]LogCore:  - CLOCK_MONOTONIC (id=1) can sustain 814256 (814K, 1M) calls per second without zero deltas.
+[2026.04.30-17.51.14:134][  0]LogCore:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 809767 (810K, 1M) calls per second without zero deltas.
+[2026.04.30-17.51.14:134][  0]LogCore:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 122628204 (122628K, 123M) calls per second with 99.999176% zero deltas.
+[2026.04.30-17.51.14:134][  0]LogCore: Selected clock_id 1 (CLOCK_MONOTONIC) since it is the fastest support clock without zero deltas.
+[2026.04.30-17.51.14:134][  0]LogCore: The clock source is too slow on this machine, performance may be affected.
+[2026.04.30-17.51.14:134][  0]LogInit: Unix-specific commandline switches:
+[2026.04.30-17.51.14:134][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2026.04.30-17.51.14:134][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2026.04.30-17.51.14:134][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2026.04.30-17.51.14:134][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2026.04.30-17.51.14:134][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2026.04.30-17.51.14:134][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2026.04.30-17.51.14:134][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2026.04.30-17.51.14:134][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2026.04.30-17.51.14:134][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2026.04.30-17.51.14:134][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2026.04.30-17.51.14:134][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2026.04.30-17.51.14:134][  0]LogInit:  - Physical RAM available (not considering process quota): 15 GB (15169 MB, 15533712 KB, 15906521088 bytes)
+[2026.04.30-17.51.14:134][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1.4
+[2026.04.30-17.51.14:134][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2026.04.30-17.51.14:143][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2026.04.30-17.51.14:143][  0]LogInit: Using OS detected language (zh-CN).
+[2026.04.30-17.51.14:143][  0]LogInit: Using OS detected locale (zh-CN).
+[2026.04.30-17.51.14:143][  0]LogTextLocalizationManager: No localization for 'zh-CN' exists, so 'en' will be used for the language.
+[2026.04.30-17.51.14:143][  0]LogTextLocalizationManager: No localization for 'zh-CN' exists, so 'en' will be used for the locale.
+[2026.04.30-17.51.14:158][  0]LogHAL: Warning: Splash screen image not found.
+[2026.04.30-17.51.14:166][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2026.04.30-17.51.14:166][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.04.30-17.51.14:167][  0]LogInit: Using SDL_WINDOW_OPENGL
+[2026.04.30-17.51.14:262][  0]LogRHI: Initializing OpenGL RHI
+[2026.04.30-17.51.14:262][  0]LogRHI:   GL_VENDOR: NVIDIA Corporation
+[2026.04.30-17.51.14:262][  0]LogRHI:   GL_RENDERER: NVIDIA GeForce RTX 4060 Laptop GPU/PCIe/SSE2
+[2026.04.30-17.51.14:262][  0]LogRHI:   GL_VERSION: 4.3.0 NVIDIA 580.126.09
+[2026.04.30-17.51.14:262][  0]LogRHI:   GL_SHADING_LANGUAGE_VERSION: 4.30 NVIDIA via Cg compiler
+[2026.04.30-17.51.14:262][  0]LogRHI: OpenGL Extensions:
+[2026.04.30-17.51.14:262][  0]LogRHI:   GL_AMD_multi_draw_indirect
+[2026.04.30-17.51.14:262][  0]LogRHI:   GL_AMD_seamless_cubemap_per_texture
+[2026.04.30-17.51.14:262][  0]LogRHI:   GL_AMD_vertex_shader_viewport_index
+[2026.04.30-17.51.14:262][  0]LogRHI:   GL_AMD_vertex_shader_layer
+[2026.04.30-17.51.14:262][  0]LogRHI:   GL_ARB_arrays_of_arrays
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_base_instance
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_bindless_texture
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_blend_func_extended
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_buffer_storage
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_clear_buffer_object
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_clear_texture
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_clip_control
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_color_buffer_float
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_compressed_texture_pixel_storage
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_conservative_depth
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_compute_shader
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_compute_variable_group_size
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_conditional_render_inverted
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_copy_buffer
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_copy_image
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_cull_distance
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_debug_output
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_depth_buffer_float
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_depth_clamp
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_depth_texture
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_derivative_control
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_direct_state_access
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_draw_buffers
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_draw_buffers_blend
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_draw_indirect
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_draw_elements_base_vertex
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_draw_instanced
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_enhanced_layouts
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_ES2_compatibility
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_ES3_compatibility
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_ES3_1_compatibility
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_ES3_2_compatibility
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_explicit_attrib_location
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_explicit_uniform_location
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_fragment_coord_conventions
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_fragment_layer_viewport
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_fragment_program
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_fragment_program_shadow
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_fragment_shader
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_fragment_shader_interlock
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_framebuffer_no_attachments
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_framebuffer_object
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_framebuffer_sRGB
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_geometry_shader4
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_get_program_binary
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_get_texture_sub_image
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_gl_spirv
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_gpu_shader5
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_gpu_shader_fp64
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_gpu_shader_int64
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_half_float_pixel
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_half_float_vertex
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_imaging
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_indirect_parameters
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_instanced_arrays
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_internalformat_query
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_internalformat_query2
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_invalidate_subdata
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_map_buffer_alignment
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_map_buffer_range
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_multi_bind
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_multi_draw_indirect
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_multisample
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_multitexture
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_occlusion_query
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_occlusion_query2
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_parallel_shader_compile
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_pipeline_statistics_query
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_pixel_buffer_object
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_point_parameters
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_point_sprite
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_polygon_offset_clamp
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_post_depth_coverage
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_program_interface_query
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_provoking_vertex
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_query_buffer_object
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_robust_buffer_access_behavior
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_robustness
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_sample_locations
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_sample_shading
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_sampler_objects
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_seamless_cube_map
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_seamless_cubemap_per_texture
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_separate_shader_objects
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_atomic_counter_ops
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_atomic_counters
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_ballot
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_bit_encoding
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_clock
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_draw_parameters
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_group_vote
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_image_load_store
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_image_size
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_objects
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_precision
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_storage_buffer_object
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_subroutine
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_texture_image_samples
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_texture_lod
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shading_language_100
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shader_viewport_layer_array
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shading_language_420pack
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shading_language_include
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shading_language_packing
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_shadow
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_sparse_buffer
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_sparse_texture
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_sparse_texture2
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_sparse_texture_clamp
+[2026.04.30-17.51.14:263][  0]LogRHI:   GL_ARB_spirv_extensions
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_stencil_texturing
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_sync
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_tessellation_shader
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_barrier
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_border_clamp
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_buffer_object
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_buffer_object_rgb32
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_buffer_range
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_compression
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_compression_bptc
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_compression_rgtc
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_cube_map
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_cube_map_array
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_env_add
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_env_combine
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_env_crossbar
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_env_dot3
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_filter_anisotropic
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_filter_minmax
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_float
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_gather
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_mirror_clamp_to_edge
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_mirrored_repeat
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_multisample
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_non_power_of_two
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_query_levels
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_query_lod
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_rectangle
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_rg
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_rgb10_a2ui
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_stencil8
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_storage
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_storage_multisample
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_swizzle
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_texture_view
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_timer_query
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_transform_feedback2
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_transform_feedback3
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_transform_feedback_instanced
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_transform_feedback_overflow_query
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_transpose_matrix
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_uniform_buffer_object
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_vertex_array_bgra
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_vertex_array_object
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_vertex_attrib_64bit
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_vertex_attrib_binding
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_vertex_buffer_object
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_vertex_program
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_vertex_shader
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_vertex_type_10f_11f_11f_rev
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_vertex_type_2_10_10_10_rev
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_viewport_array
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ARB_window_pos
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ATI_draw_buffers
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ATI_texture_float
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_ATI_texture_mirror_once
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_S3_s3tc
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_texture_env_add
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_abgr
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_bgra
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_bindable_uniform
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_blend_color
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_blend_equation_separate
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_blend_func_separate
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_blend_minmax
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_blend_subtract
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_compiled_vertex_array
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_Cg_shader
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_depth_bounds_test
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_direct_state_access
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_draw_buffers2
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_draw_instanced
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_draw_range_elements
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_fog_coord
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_framebuffer_blit
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_framebuffer_multisample
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXTX_framebuffer_mixed_formats
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_framebuffer_multisample_blit_scaled
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_framebuffer_object
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_framebuffer_sRGB
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_geometry_shader4
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_gpu_program_parameters
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_gpu_shader4
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_multi_draw_arrays
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_multiview_texture_multisample
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_multiview_timer_query
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_packed_depth_stencil
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_packed_float
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_packed_pixels
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_pixel_buffer_object
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_point_parameters
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_polygon_offset_clamp
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_post_depth_coverage
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_provoking_vertex
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_raster_multisample
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_rescale_normal
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_secondary_color
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_separate_shader_objects
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_separate_specular_color
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_shader_image_load_formatted
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_shader_image_load_store
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_shader_integer_mix
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_shadow_funcs
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_sparse_texture2
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_stencil_two_side
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_stencil_wrap
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_texture3D
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_texture_array
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_texture_buffer_object
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_texture_compression_dxt1
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_texture_compression_latc
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_texture_compression_rgtc
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_texture_compression_s3tc
+[2026.04.30-17.51.14:264][  0]LogRHI:   GL_EXT_texture_cube_map
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_edge_clamp
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_env_combine
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_env_dot3
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_filter_anisotropic
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_filter_minmax
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_integer
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_lod
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_lod_bias
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_mirror_clamp
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_object
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_shadow_lod
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_shared_exponent
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_sRGB
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_sRGB_R8
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_sRGB_decode
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_storage
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_texture_swizzle
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_timer_query
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_transform_feedback2
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_vertex_array
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_vertex_array_bgra
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_vertex_attrib_64bit
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_window_rectangles
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_x11_sync_object
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_import_sync_object
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_robustness_video_memory_purge
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_IBM_rasterpos_clip
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_IBM_texture_mirrored_repeat
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_KHR_context_flush_control
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_KHR_debug
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_memory_object
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_memory_object_fd
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_memory_object_sparse
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_KHR_parallel_shader_compile
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_KHR_no_error
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_KHR_robust_buffer_access_behavior
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_KHR_robustness
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_semaphore
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_EXT_semaphore_fd
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_timeline_semaphore
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_KHR_shader_subgroup
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_KTX_buffer_region
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_alpha_to_coverage_dither_control
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_bindless_multi_draw_indirect
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_bindless_multi_draw_indirect_count
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_bindless_texture
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_blend_equation_advanced
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_blend_equation_advanced_coherent
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NVX_blend_equation_advanced_multi_draw_buffers
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_blend_minmax_factor
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_blend_square
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_clip_space_w_scaling
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_command_list
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_compute_program5
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_compute_shader_derivatives
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_conditional_render
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_conservative_raster
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_conservative_raster_dilate
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_conservative_raster_pre_snap
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_conservative_raster_pre_snap_triangles
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_conservative_raster_underestimation
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_copy_depth_to_color
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_copy_image
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_depth_buffer_float
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_depth_clamp
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_draw_texture
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_draw_vulkan_image
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_ES1_1_compatibility
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_ES3_1_compatibility
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_explicit_multisample
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_feature_query
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_fence
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_fill_rectangle
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_float_buffer
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_fog_distance
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_fragment_coverage_to_color
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_fragment_program
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_fragment_program_option
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_fragment_program2
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_fragment_shader_barycentric
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_fragment_shader_interlock
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_framebuffer_mixed_samples
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_framebuffer_multisample_coverage
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_geometry_shader4
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_geometry_shader_passthrough
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_gpu_program4
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_internalformat_sample_query
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_gpu_program4_1
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_gpu_program5
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_gpu_program5_mem_extended
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_gpu_program_fp64
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_gpu_program_multiview
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_gpu_shader5
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_half_float
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_light_max_exponent
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_memory_attachment
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_mesh_shader
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_multisample_coverage
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_multisample_filter_hint
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_occlusion_query
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_packed_depth_stencil
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_parameter_buffer_object
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_parameter_buffer_object2
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_path_rendering
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_path_rendering_shared_edge
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_pixel_data_range
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_point_sprite
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_primitive_restart
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_primitive_shading_rate
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_query_resource
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_query_resource_tag
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_register_combiners
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_register_combiners2
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_representative_fragment_test
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_sample_locations
+[2026.04.30-17.51.14:265][  0]LogRHI:   GL_NV_sample_mask_override_coverage
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_scissor_exclusive
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shader_atomic_counters
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shader_atomic_float
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shader_atomic_float64
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shader_atomic_fp16_vector
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shader_atomic_int64
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shader_buffer_load
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shader_storage_buffer_object
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shader_subgroup_partitioned
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shader_texture_footprint
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shading_rate_image
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_stereo_view_rendering
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_texgen_reflection
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_texture_barrier
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_texture_compression_vtc
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_texture_dirty_tile_map
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_texture_env_combine4
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_texture_multisample
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_texture_rectangle
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_texture_rectangle_compressed
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_texture_shader
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_texture_shader2
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_texture_shader3
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_transform_feedback
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_transform_feedback2
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_uniform_buffer_unified_memory
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_uniform_buffer_std430_layout
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_vdpau_interop
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_vdpau_interop2
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_vertex_array_range
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_vertex_array_range2
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_vertex_attrib_integer_64bit
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_vertex_buffer_unified_memory
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_vertex_program
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_vertex_program1_1
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_vertex_program2
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_vertex_program2_option
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_vertex_program3
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_viewport_array2
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_viewport_swizzle
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NVX_conditional_render
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_gpu_multicast
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NVX_progress_fence
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NVX_gpu_memory_info
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NVX_nvenc_interop
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shader_thread_group
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_NV_shader_thread_shuffle
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_KHR_blend_equation_advanced
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_KHR_blend_equation_advanced_coherent
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_OVR_multiview
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_OVR_multiview2
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_SGIS_generate_mipmap
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_SGIS_texture_lod
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_SGIX_depth_texture
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_SGIX_shadow
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_SUN_slice_accum
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_TEXTURE_SIZE: 32768
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_TEXTURE_BUFFER_SIZE: 134217728
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_CUBE_MAP_TEXTURE_SIZE: 32768
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_ARRAY_TEXTURE_LAYERS: 2048
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_3D_TEXTURE_SIZE: 16384
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_RENDERBUFFER_SIZE: 32768
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_DRAW_BUFFERS: 8
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_COLOR_ATTACHMENTS: 8
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_SAMPLES: 32
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_COLOR_TEXTURE_SAMPLES: 32
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_DEPTH_TEXTURE_SAMPLES: 32
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_INTEGER_SAMPLES: 32
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 192
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_VERTEX_ATTRIBS: 16
+[2026.04.30-17.51.14:266][  0]LogRHI:   GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT: 16
+[2026.04.30-17.51.14:266][  0]LogRHI: OpenGL MajorVersion = 4, MinorVersion = 3, ShaderPlatform = GLSL_430, FeatureLevel = SM5
+[2026.04.30-17.51.14:266][  0]LogRHI: FOpenGLProgramBinaryCache disabled by r.ProgramBinaryCache.Enable=0
+[2026.04.30-17.51.14:268][  0]LogRHI: Texture pool is 5731 MB (70% of 8188 MB)
+[2026.04.30-17.51.14:284][  0]LogShaderLibrary: Display: Using ../../../LivoxViewer2/Content/ShaderArchive-Global-GLSL_430.ushaderbytecode for material shader code. Total 1367 unique shaders.
+[2026.04.30-17.51.14:284][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library Global
+[2026.04.30-17.51.14:284][  0]LogTemp: Warning: Clearing the OS Cache
+[2026.04.30-17.51.14:290][  0]LogPakFile: New pak file ../../../LivoxViewer2/Content/Paks/LivoxViewer2-LinuxNoEditor.pak added to pak precacher.
+[2026.04.30-17.51.14:303][  0]LogSlate: Using FreeType 2.10.0
+[2026.04.30-17.51.14:303][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.04.30-17.51.14:330][  0]LogShaderLibrary: Display: Using ../../../LivoxViewer2/Content/ShaderArchive-LivoxViewer2-GLSL_430.ushaderbytecode for material shader code. Total 833 unique shaders.
+[2026.04.30-17.51.14:330][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library LivoxViewer2
+[2026.04.30-17.51.14:330][  0]LogRHI: Display: Opened pipeline cache after state change and enqueued 0 of 0 tasks for precompile.
+[2026.04.30-17.51.14:330][  0]LogRHI: Display: Failed to open default shader pipeline cache for LivoxViewer2 using shader platform 6.
+[2026.04.30-17.51.14:330][  0]LogInit: Using OS detected language (zh-CN).
+[2026.04.30-17.51.14:330][  0]LogInit: Using OS detected locale (zh-CN).
+[2026.04.30-17.51.14:330][  0]LogTextLocalizationManager: No localization for 'zh-CN' exists, so 'en' will be used for the language.
+[2026.04.30-17.51.14:330][  0]LogTextLocalizationManager: No localization for 'zh-CN' exists, so 'en' will be used for the locale.
+[2026.04.30-17.51.14:331][  0]LogTextLocalizationManager: Compacting localization data took   1.05ms
+[2026.04.30-17.51.14:334][  0]LogAssetRegistry: FAssetRegistry took 0.0031 seconds to start up
+[2026.04.30-17.51.14:375][  0]LogStreaming: Display: Flushing async loaders.
+[2026.04.30-17.51.14:375][  0]LogPackageLocalizationCache: Processed 21 localized package path(s) for 1 prioritized culture(s) in 0.000066 seconds
+[2026.04.30-17.51.14:378][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.04.30-17.51.14:388][  0]LogNetVersion: LivoxViewer2 1.0.0, NetCL: 0, EngineNetVer: 14, GameNetVer: 0 (Checksum: 4061608072)
+[2026.04.30-17.51.14:421][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.04.30-17.51.14:421][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.04.30-17.51.14:441][  0]LogAISub: UAISubsystem AISubsystem (0x7661f27f7e00), frame # 0
+[2026.04.30-17.51.14:441][  0]LogAISub: UAISubsystem AIPerceptionSystem (0x7661f2640c40), frame # 0
+[2026.04.30-17.51.14:441][  0]LogAISub: UAISubsystem EnvQueryManager (0x7661f28e6800), frame # 0
+[2026.04.30-17.51.14:447][  0]LogMoviePlayer: Initializing movie player
+[2026.04.30-17.51.14:539][  0]LogLinux: Setting swap interval to 'Immediate'
+[2026.04.30-17.51.14:606][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.04.30-17.51.14:609][  0]LogUObjectArray: 14170 objects as part of root set at end of initial load.
+[2026.04.30-17.51.14:609][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2026.04.30-17.51.14:609][  0]LogUObjectAllocator: 2887144 out of 0 bytes used by permanent object pool.
+[2026.04.30-17.51.14:609][  0]LogUObjectArray: CloseDisregardForGC: 14170/14170 objects in disregard for GC pool
+[2026.04.30-17.51.14:611][  0]LogEngine: Initializing Engine...
+[2026.04.30-17.51.14:612][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.04.30-17.51.14:724][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.04.30-17.51.14:724][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.04.30-17.51.14:724][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.04.30-17.51.14:724][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.04.30-17.51.14:724][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.04.30-17.51.14:724][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.04.30-17.51.14:724][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.04.30-17.51.14:724][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.04.30-17.51.14:724][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.04.30-17.51.14:724][  0]LogAudio: Display: Using built-in audio occlusion.
+[2026.04.30-17.51.14:724][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.04.30-17.51.14:728][  0]LogAudioMixerSDL: Display: Initialized SDL using pulseaudio platform API backend.
+[2026.04.30-17.51.14:804][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.04.30-17.51.14:806][  0]LogAudioMixer: Display: Using Audio Device Default Audio Device
+[2026.04.30-17.51.14:806][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.04.30-17.51.14:808][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.04.30-17.51.14:808][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.04.30-17.51.14:809][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2026.04.30-17.51.14:809][  0]LogInit: FAudioDevice initialized.
+[2026.04.30-17.51.14:810][  0]LogNetVersion: Set ProjectVersion to 2.0.0. Version Checksum will be recalculated on next use.
+[2026.04.30-17.51.14:810][  0]LogInit: Texture streaming: Enabled
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 30.000000
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 90.000000
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 150.000000
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 30.000000
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 90.000000
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 150.000000
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 30.000000
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 90.000000
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 150.000000
+[2026.04.30-17.51.14:814][  0]Livox: ALvxKit::CreateTemporaryLvxSaveFolder: create lvx folder success. /home/renwang/data_storage/lidar_perception/tools/livox_viewer2_v2.3.0/LivoxViewer2/Lvx Saved/
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 30.000000
+[2026.04.30-17.51.14:814][  0]Livox: ALvxKit Data Thread Enter.
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 90.000000
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 150.000000
+[2026.04.30-17.51.14:814][  0]Livox: ULivoxLidarManager::HeartBeat Enter
+[2026.04.30-17.51.14:814][  0]Livox: ULivoxLidarManager::DataProcess Enter
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 30.000000
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 90.000000
+[2026.04.30-17.51.14:814][  0]LogTemp: Warning: ADD THRESHOLD 150.000000
+[2026.04.30-17.51.14:815][  0]LogTemp: Warning: ADD THRESHOLD 30.000000
+[2026.04.30-17.51.14:815][  0]Livox: ULivoxUniformManager::ThreadHeartBeat Enter
+[2026.04.30-17.51.14:815][  0]LogTemp: Warning: ADD THRESHOLD 90.000000
+[2026.04.30-17.51.14:815][  0]LogTemp: Warning: ADD THRESHOLD 150.000000
+[2026.04.30-17.51.14:815][  0]Livox: ULivoxUniformManager::ThreadDataProcess Enter
+[2026.04.30-17.51.14:815][  0]Livox: UVehicleLidarManager::ThreadHeartBeat Enter
+[2026.04.30-17.51.14:815][  0]Livox: UVehicleLidarManager::ThreadDataProcess Enter
+[2026.04.30-17.51.14:815][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.04.30-17.51.14:815][  0]LogInit: Display: Game Engine Initialized.
+[2026.04.30-17.51.14:816][  0]LogInit: Display: Starting Game.
+[2026.04.30-17.51.14:816][  0]LogNet: Browse: /Game/Maps/Start?Name=Player
+[2026.04.30-17.51.14:816][  0]LogLoad: LoadMap: /Game/Maps/Start?Name=Player
+[2026.04.30-17.51.14:816][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2026.04.30-17.51.14:817][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.04.30-17.51.14:817][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.04.30-17.51.14:819][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2026.04.30-17.51.14:822][  0]LogAIModule: Creating AISystem for world Start
+[2026.04.30-17.51.14:822][  0]LogAISub: UAISubsystem EnvQueryManager (0x766223342000), frame # 0
+[2026.04.30-17.51.14:823][  0]LogAISub: UAISubsystem AIPerceptionSystem (0x76622305e980), frame # 0
+[2026.04.30-17.51.14:823][  0]LogLoad: Game class is 'GameModeBase'
+[2026.04.30-17.51.14:823][  0]LogWorld: Bringing World /Game/Maps/Start.Start up for play (max tick rate 0) at 2026.05.01-01.51.14
+[2026.04.30-17.51.14:823][  0]LogWorld: Bringing up level for play took: 0.000150
+[2026.04.30-17.51.14:824][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2026.04.30-17.51.14:824][  0]LogUMG: Display: Widget Class LoadingScreen_C - Loaded Fast Template.
+[2026.04.30-17.51.14:824][  0]LogLoad: Took 0.008653 seconds to LoadMap(/Game/Maps/Start)
+[2026.04.30-17.51.14:890][  0]LogRHI: Display: ShaderPipelineCache: Paused Batching. 1
+[2026.04.30-17.51.14:890][  0]LogRHI: Display: ShaderPipelineCache: Resumed Batching. 0
+[2026.04.30-17.51.14:890][  0]LogRHI: Display: ShaderPipelineCache: Batching Resumed.
+[2026.04.30-17.51.14:890][  0]LogLoad: (Engine Initialization) Total time: 1.15 seconds
+[2026.04.30-17.51.14:893][  0]LogRenderer: Reallocating scene render targets to support 2560x1440 Format 10 NumSamples 1 (Frame:1).
+[2026.04.30-17.51.14:899][  0]LogRHI: Using OpenGL program LRU cache: 0
+[2026.04.30-17.51.14:967][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2026.04.30-17.51.15:044][  1]LogRenderer: Reallocating scene render targets to support 4096x2304 Format 10 NumSamples 1 (Frame:3).
+[2026.04.30-17.51.16:050][ 30]LogStreaming: Display: Flushing async loaders.
+[2026.04.30-17.51.16:052][ 30]LogUMG: Display: Widget Class TopMessageBoard_BP_C - Loaded Fast Template.
+[2026.04.30-17.51.16:250][ 36]LogNet: Browse: /Game/Maps/Viewer
+[2026.04.30-17.51.16:250][ 36]LogLoad: LoadMap: /Game/Maps/Viewer
+[2026.04.30-17.51.16:250][ 36]LogWorld: BeginTearingDown for /Game/Maps/Start
+[2026.04.30-17.51.16:250][ 36]LogWorld: UWorld::CleanupWorld for Start, bSessionEnded=true, bCleanupResources=true
+[2026.04.30-17.51.16:250][ 36]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.04.30-17.51.16:276][ 36]LogAISub: ~UAISubsystem EnvQueryManager (0x766223342000), frame # 36
+[2026.04.30-17.51.16:276][ 36]LogAISub: ~UAISubsystem AIPerceptionSystem (0x76622305e980), frame # 36
+[2026.04.30-17.51.16:276][ 36]LogUObjectHash: Compacting FUObjectHashTables data took   0.39ms
+[2026.04.30-17.51.16:292][ 36]LogStreaming: Display: Flushing async loaders.
+[2026.04.30-17.51.16:420][ 36]LogAIModule: Creating AISystem for world Viewer
+[2026.04.30-17.51.16:420][ 36]LogAISub: UAISubsystem EnvQueryManager (0x7661d77e7800), frame # 36
+[2026.04.30-17.51.16:420][ 36]LogAISub: UAISubsystem AIPerceptionSystem (0x7661f2c97680), frame # 36
+[2026.04.30-17.51.16:420][ 36]LogLoad: Game class is 'ViewerGameMode_C'
+[2026.04.30-17.51.16:421][ 36]LogWorld: Bringing World /Game/Maps/Viewer.Viewer up for play (max tick rate 0) at 2026.05.01-01.51.16
+[2026.04.30-17.51.16:421][ 36]LogWorld: Bringing up level for play took: 0.000322
+[2026.04.30-17.51.16:421][ 36]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2026.04.30-17.51.16:421][ 36]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2026.04.30-17.51.16:421][ 36]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2026.04.30-17.51.16:421][ 36]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2026.04.30-17.51.16:429][ 36]ShowFlag.Lighting = "0"
+[2026.04.30-17.51.16:429][ 36]ShowFlag.PostProcessing = "0"
+[2026.04.30-17.51.16:429][ 36]ShowFlag.Particles = "0"
+[2026.04.30-17.51.16:429][ 36]ShowFlag.AntiAliasing = "0"
+[2026.04.30-17.51.16:429][ 36]LogUMG: Display: Widget Class WBP_ViewerMain_C - Loaded Fast Template.
+[2026.04.30-17.51.16:438][ 36]Livox: ULivoxUniformManager::InitSDK. Host IP = 10.16.113.60
+[2026.04.30-17.51.16:438][ 36]Livox: ULivoxUniformManager::InitSDK success.
+[2026.04.30-17.51.16:461][ 36]LogSlate: Took 0.020774 seconds to synchronously load lazily loaded font '../../../LivoxViewer2/Content/UMG/Asset/Texture/FZShangKJW.ufont' (1585K)
+[2026.04.30-17.51.16:464][ 36]LogSlate: Took 0.002035 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2026.04.30-17.51.16:470][ 36]LogTemp: Crash Report Binded!
+[2026.04.30-17.51.16:473][ 36]LogSlate: Took 0.001706 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2026.04.30-17.51.16:475][ 36]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2026.04.30-17.51.16:475][ 36]LogLoad: Took 0.225839 seconds to LoadMap(/Game/Maps/Viewer)
+[2026.04.30-17.51.16:506][ 36]LogSlate: Took 0.029232 seconds to synchronously load lazily loaded font '../../../LivoxViewer2/Content/UMG/Asset/Texture/FZShangKJW1.ufont' (2335K)
+[2026.04.30-17.51.16:509][ 36]LogSlate: Took 0.001787 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBoldItalic.ufont' (162K)
+[2026.04.30-17.51.16:511][ 36]LogSlate: Took 0.001667 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoRegular.ufont' (155K)
+[2026.04.30-17.51.16:550][ 38]r.SetRes = "4096x2304w"
+[2026.04.30-17.51.16:697][ 40]LogRenderer: Reallocating scene render targets to support 3932x2176 Format 10 NumSamples 1 (Frame:7).
+[2026.04.30-17.51.16:764][ 42]LogStreaming: Warning: Failed to read file '../../../LivoxViewer2/Saved/SaveGames/SavedGridConfig.sav' error.
+[2026.04.30-17.51.16:764][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:764][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: PopulatePhysXGeometryAndTransform(Convex): ConvexElem is missing ConvexMesh
+[2026.04.30-17.51.16:765][ 42]LogPhysics: Warning: ForeachShape(Convex): ScaledElem[0] invalid
+[2026.04.30-17.51.21:550][160]Livox: ULivoxUniformManager::DeinitSDK Done
+[2026.04.30-17.51.21:551][160]Livox: ULivoxUniformManager::InitSDK. Host IP = 10.16.113.60
+[2026.04.30-17.51.21:551][160]Livox: ULivoxUniformManager::InitSDK success.
+[2026.04.30-17.51.24:660][232]Livox: ULivoxUniformManager::DeinitSDK Done
+[2026.04.30-17.51.24:660][232]Livox: ULivoxUniformManager::InitSDK. Host IP = 10.16.113.60
+[2026.04.30-17.51.24:660][232]Livox: ULivoxUniformManager::InitSDK success.
+[2026.04.30-17.52.14:729][727]Livox: ULivoxUniformManager::DeinitSDK Done
+[2026.04.30-17.52.14:729][727]Livox: ULivoxUniformManager::InitSDK. Host IP = 10.16.113.60
+[2026.04.30-17.52.14:730][727]Livox: ULivoxUniformManager::InitSDK success.
+[2026.04.30-17.52.18:766][849]Livox: ULivoxUniformManager::InitSDK. Host IP = 172.24.49.67
+[2026.04.30-17.52.19:791][849]Livox: ULivoxUniformManager::DeinitSDK Done
+[2026.04.30-17.52.19:791][849]Livox: ULivoxUniformManager::InitSDK success.
+[2026.04.30-17.52.21:329][896]Livox: ULivoxUniformManager::InitSDK. Host IP = 172.17.0.1
+[2026.04.30-17.52.21:847][896]Livox: ULivoxUniformManager::DeinitSDK Done
+[2026.04.30-17.52.21:847][896]Livox: ULivoxUniformManager::InitSDK success.
+[2026.04.30-17.52.23:318][941]Livox: ULivoxUniformManager::InitSDK. Host IP = 192.168.1.50
+[2026.04.30-17.52.23:902][941]Livox: ULivoxUniformManager::DeinitSDK Done
+[2026.04.30-17.52.23:902][941]Livox: ULivoxUniformManager::InitSDK success.
+[2026.04.30-17.52.24:942][973]Livox: ULivoxUniformManager::LidarInfoChangeCallback, handle = 2097260736, sn = 47MDMBR0030125, ip = 192.168.1.125
+[2026.04.30-17.52.24:942][973]Livox: FViewerRenderBuffer::SetRenderBufferSize, new BufferSize =  50000, new ArraySize = 65536, texture size = 256
+[2026.04.30-17.52.24:942][973]Livox: FLivoxDataProcessor::SetRenderMode = TimeFrame, Device = 47MDMBR0030125, RenderFrameNum = 2
+[2026.04.30-17.52.24:942][973]Livox: AViewerUI::OnDeviceEvent AddDevice, 47MDMBR0030125
+[2026.04.30-17.52.24:942][973]Livox:  ULivoxUniformManager::PointCloudCallback >> set 47MDMBR0030125 state from Unknown to Normal
+[2026.04.30-17.52.24:942][973]Livox: APointCloudRenderer::OnDeviceEvent AddDevice, 47MDMBR0030125
+[2026.04.30-17.52.24:942][973]Livox: UBaseDeviceManager::AddDevice = 47MDMBR0030125
+[2026.04.30-17.52.24:942][973]LogUMG: Display: Widget Class WBP_ColorCoding_IDItem_C - Loaded Fast Template.
+[2026.04.30-17.52.24:943][973]LogTemp: UGPUPointCloudRendererComponent::CreateStreamingBaseMesh. pointCount = 50000
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, lidar_state changed [0] -> [1]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, powerup_cnt changed [-842150451] -> [130]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, time_offset changed [-842150451] -> [0]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, time_sync_type changed [205] -> [0]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, FW_TYPE changed [205] -> [1]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, ip changed [192.168.1.125] -> [192.168.1.125], gateway = 192.168.1.1, subnet mask = 255.255.255.0
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, glass_heat_enable changed [205] -> [236]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, dual_emit_enable changed [205] -> [240]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, pattern_mode changed [205] -> [0]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, imu_data_en changed [205] -> [1]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, firmware_version changed [] -> [13.18.02.21]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, product_info changed [] -> [DevType:Mid-360 FmType:App FmVer:13180221 BuildTime:2023/12/19]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, lidar_mac changed [] -> [58:B8:58:96:C4:45]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, version_hardware changed [] -> [00.00.00.00]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, version_loader changed [] -> [13.17.99.20]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, hms_code changed
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, detect_mode changed [205] -> [0]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, roi_en changed [205] -> [0]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, roi_cfg0 changed [-842150451 -842150451 -842150451 -842150451] -> [0 0 -7 52]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, roi_cfg1 changed [-842150451 -842150451 -842150451 -842150451] -> [0 0 -7 52]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, HostIP changed [0.0.0.0] -> [192.168.1.50], Port changed [52685] -> [56301]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, host_imu_addr changed [0.0.0.0] -> [192.168.1.50], Port changed [52685] -> [56401]
+[2026.04.30-17.52.24:994][974]Livox: ULivoxUniformManager::QueryLidarInfo, host_state_info_addr changed [0.0.0.0] -> [192.168.1.50], Port changed [52685] -> [56201]
+[2026.04.30-17.52.25:261][982]LogUMG: Display: Widget Class LidarItemUI_C - Loaded Fast Template.
+[2026.04.30-17.52.25:262][982]LogSlate: WidgetSwitcher ('None') active index changed to 2
+[2026.04.30-17.52.25:262][982]LogUMG: Display: Widget Class FirmwareUpgradeItem_C - Loaded Fast Template.
+[2026.04.30-17.52.25:262][982]LogUMG: Display: Widget Class LidarExtrinsicParamItem_C - Loaded Fast Template.
+[2026.04.30-17.52.25:462][988]LogUMG: Display: Widget Class UniformParamUI_C - Loaded Fast Template.
+[2026.04.30-17.52.25:463][988]LogUMG: Display: Widget Class CustomWidget_UniformParamUISpinbox_C - Loaded Fast Template.
+[2026.04.30-17.52.25:475][988]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2026.04.30-17.52.25:477][988]LogSlate: WidgetSwitcher ('None') active index changed to 3
+[2026.04.30-17.52.25:477][988]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2026.04.30-17.52.25:479][988]LogSlate: WidgetSwitcher ('None') active index changed to 3
+[2026.04.30-17.52.25:480][988]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2026.04.30-17.52.25:481][988]LogSlate: WidgetSwitcher ('None') active index changed to 3
+[2026.04.30-17.52.25:482][988]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2026.04.30-17.52.25:483][988]LogSlate: WidgetSwitcher ('None') active index changed to 4
+[2026.04.30-17.52.25:484][988]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2026.04.30-17.52.25:485][988]LogSlate: WidgetSwitcher ('None') active index changed to 4
+[2026.04.30-17.52.25:486][988]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2026.04.30-17.52.25:487][988]LogSlate: WidgetSwitcher ('None') active index changed to 4
+[2026.04.30-17.52.25:488][988]LogSlate: WidgetSwitcher ('None') active index changed to 3
+[2026.04.30-17.52.25:489][988]LogSlate: WidgetSwitcher ('None') active index changed to 4
+[2026.04.30-17.52.25:491][988]LogSlate: WidgetSwitcher ('None') active index changed to 4
+[2026.04.30-17.52.25:492][988]LogSlate: WidgetSwitcher ('None') active index changed to 3
+[2026.04.30-17.52.25:493][988]LogSlate: WidgetSwitcher ('None') active index changed to 3
+[2026.04.30-17.52.25:495][988]LogSlate: WidgetSwitcher ('None') active index changed to 4
+[2026.04.30-17.52.25:534][990]Livox: FViewerRenderBuffer::RenderMultiFrame, FrameNum = 2, PointsNum = 9984, resize BufferSize [50000 -> 118000]
+[2026.04.30-17.52.25:534][990]Livox: FViewerRenderBuffer::SetRenderBufferSize, new BufferSize =  118000, new ArraySize = 262144, texture size = 512
+[2026.04.30-17.52.25:534][990]LogTemp: UGPUPointCloudRendererComponent::CreateStreamingBaseMesh. pointCount = 118000
+[2026.04.30-17.52.25:534][990]LogUObjectGlobals: Warning: Gamethread hitch waiting for resource cleanup on a UObject (PointCloudMeshComponent /Game/Maps/Viewer.Viewer:PersistentLevel.DrawPointActor_2147482466.PointCloudRendererComp.PointCloud Mesh) overwrite took   0.01ms. Fix the higher level code so that this does not happen.
+[2026.04.30-17.52.25:595][990]LogSerialization: Warning: Attempting to load a BulkData object that cannot be loaded from disk
+[2026.04.30-17.52.25:600][990]LogSerialization: Warning: Attempting to load a BulkData object that cannot be loaded from disk
+[2026.04.30-17.52.25:606][990]LogSerialization: Warning: Attempting to load a BulkData object that cannot be loaded from disk
+[2026.04.30-17.52.28:733][ 84]Livox: ULivoxUniformManager::QueryLidarInfo, glass_heat_enable changed [236] -> [0]
+[2026.04.30-17.52.28:734][ 84]Livox: ULivoxUniformManager::QueryLidarInfo, dual_emit_enable changed [240] -> [0]
+[2026.04.30-17.52.45:732][593]Livox: FViewerRenderBuffer::RenderMultiFrame, FrameNum = 20, PointsNum = 199968, resize BufferSize [118000 -> 249956]
+[2026.04.30-17.52.45:732][593]LogTemp: UGPUPointCloudRendererComponent::CreateStreamingBaseMesh. pointCount = 249956
+[2026.04.30-17.52.45:732][593]LogUObjectGlobals: Warning: Gamethread hitch waiting for resource cleanup on a UObject (PointCloudMeshComponent /Game/Maps/Viewer.Viewer:PersistentLevel.DrawPointActor_2147482466.PointCloudRendererComp.PointCloud Mesh) overwrite took   0.02ms. Fix the higher level code so that this does not happen.
+[2026.04.30-17.53.45:816][389]LogSlate: Request Window 'LivoxViewer 2.3.0' being destroyed
+[2026.04.30-17.53.45:927][389]LogSlate: Window 'LivoxViewer 2.3.0' being destroyed
+[2026.04.30-17.53.45:944][389]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.04.30-17.53.45:944][389]LogEngine: All Windows Closed
+[2026.04.30-17.53.45:944][389]LogCore: FUnixPlatformMisc::RequestExit(0)
+[2026.04.30-17.53.45:944][389]LogGenericPlatformMisc: FPlatformMisc::RequestExit(0)
+[2026.04.30-17.53.45:944][389]LogCore: Engine exit requested (reason: GenericPlatform RequestExit)
+[2026.04.30-17.53.45:945][390]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2026.04.30-17.53.45:945][390]LogAudio: Display: Shutting down audio device while 2 references to it are still alive. For more information, compile with INSTRUMENT_AUDIODEVICE_HANDLES.
+[2026.04.30-17.53.45:977][390]LogInit: Display: PreExit Game.
+[2026.04.30-17.53.45:998][390]LogWorld: BeginTearingDown for /Game/Maps/Viewer
+[2026.04.30-17.53.45:999][390]Livox: ULivoxUniformManager::StopSampleLidar successed, 47MDMBR0030125
+[2026.04.30-17.53.45:999][390]Livox: APointCloudRenderer::OnDeviceEvent event id = 9, 47MDMBR0030125
+[2026.04.30-17.53.45:999][390]Livox: ULivoxUniformManager::DisconnectLidar Done, 47MDMBR0030125
+[2026.04.30-17.53.46:006][390]Livox: ALvxKit Data Thread Exit.
+[2026.04.30-17.53.46:006][390]Livox: FViewerFrameBuffer::ClearFrameBuffer
+[2026.04.30-17.53.46:008][390]Livox: APointCloudRenderer::OnDeviceEvent DeviceConnectChange, 47MDMBR0030125
+[2026.04.30-17.53.46:018][390]Livox: ULivoxLidarManager::DataProcess Exit
+[2026.04.30-17.53.46:018][390]Livox: FViewerFrameBuffer::ClearFrameBuffer
+[2026.04.30-17.53.46:020][390]Livox: APointCloudRenderer::OnDeviceEvent DeviceRemoveAll, 
+[2026.04.30-17.53.46:991][390]Livox: ULivoxLidarManager::ThreadLidarSync Exit
+[2026.04.30-17.53.46:991][390]Livox: ULivoxUniformManager::DeinitSDK Done
+[2026.04.30-17.53.46:991][390]Livox: ULivoxUniformManager::ThreadHeartBeat Exit
+[2026.04.30-17.53.46:991][390]LogWorld: UWorld::CleanupWorld for Viewer, bSessionEnded=true, bCleanupResources=true
+[2026.04.30-17.53.46:991][390]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.04.30-17.53.46:997][390]Livox: Warning: FBasePointCloudDataProcessor::ClearRenderData unimplemented!
+[2026.04.30-17.53.46:997][390]LogTemp: UGPUPointCloudRendererComponent::SetInput. input num (4096) != mPointCount (0), rebuild triangles = 4096
+[2026.04.30-17.53.46:997][390]LogTemp: UGPUPointCloudRendererComponent::CreateStreamingBaseMesh. pointCount = 4096
+[2026.04.30-17.53.46:999][390]Livox: UVehicleLidarManager::ThreadDataProcess Exit
+[2026.04.30-17.53.46:999][390]LogSerialization: Warning: Attempting to load a BulkData object that cannot be loaded from disk
+[2026.04.30-17.53.46:999][390]LogSerialization: Warning: Attempting to load a BulkData object that cannot be loaded from disk
+[2026.04.30-17.53.46:999][390]LogSerialization: Warning: Attempting to load a BulkData object that cannot be loaded from disk
+[2026.04.30-17.53.47:001][390]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2026.04.30-17.53.47:001][390]LogExit: Preparing to exit.
+[2026.04.30-17.53.47:001][390]LogMoviePlayer: Shutting down movie player
+[2026.04.30-17.53.47:004][390]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.04.30-17.53.47:011][390]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2026.04.30-17.53.47:012][390]LogExit: Game engine shut down
+[2026.04.30-17.53.47:013][390]Livox: ULivoxUniformManager::ThreadDataProcess Exit
+[2026.04.30-17.53.47:021][390]LogAISub: ~UAISubsystem AISubsystem (0x7661f27f7e00), frame # 4390
+[2026.04.30-17.53.47:021][390]LogAISub: ~UAISubsystem AIPerceptionSystem (0x7661f2640c40), frame # 4390
+[2026.04.30-17.53.47:022][390]LogAISub: ~UAISubsystem EnvQueryManager (0x7661f28e6800), frame # 4390
+[2026.04.30-17.53.47:024][390]LogAISub: ~UAISubsystem EnvQueryManager (0x7661d77e7800), frame # 4390
+[2026.04.30-17.53.47:024][390]LogAISub: ~UAISubsystem AIPerceptionSystem (0x7661f2c97680), frame # 4390
+[2026.04.30-17.53.47:038][390]LogExit: Object subsystem successfully closed.
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module AutomationController (270)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module AutomationWorker (268)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module Voice (266)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module AIModule (264)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module GameplayDebugger (263)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module NavigationSystem (261)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (258)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module WebMMedia (256)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (254)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (252)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (250)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module CharacterAI (248)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module PlanarCut (246)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module SessionServices (244)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module LevelSequence (242)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (240)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module MovieScene (238)
+[2026.04.30-17.53.47:061][390]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (236)
+[2026.04.30-17.53.47:062][390]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (234)
+[2026.04.30-17.53.47:062][390]LogModuleManager: Shutting down and abandoning module ProfilerService (232)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module TaskGraph (230)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module Synthesis (228)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (226)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module GooglePAD (224)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (222)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module CableComponent (220)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module AudioCapture (218)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module AssetTags (216)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (214)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module AppleImageUtils (212)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module AndroidPermission (210)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module TemplateSequence (208)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module MediaCompositing (206)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module ImgMedia (204)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module ChaosNiagara (202)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (200)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (198)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module EditableMesh (196)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module MeshSolverUtilities (194)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module MeshConversion (192)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module DynamicMesh (190)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (188)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module GeometricObjects (186)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module ChaosCloth (184)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module BackChannel (182)
+[2026.04.30-17.53.47:142][390]LogModuleManager: Shutting down and abandoning module AutomationUtils (180)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (178)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module GeometryCache (176)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module UObjectPlugin (174)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module RuntimeTransformer (172)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module EasyNotification (170)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module NativizedAssets (168)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module OnScreenLog (166)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module EasyEmail (164)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module LivoxViewer2 (162)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module SoundFields (160)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (158)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (154)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module ActorSequence (152)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module UdpMessaging (150)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module TcpMessaging (148)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (146)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module Niagara (144)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module NiagaraCore (142)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module FacialAnimation (140)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module SignificanceManager (138)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module AnimationSharing (136)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (134)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module Paper2D (132)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module ColorWheelPlugin (130)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (128)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module pcls (126)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module Ltrace (124)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module LivoxSDK2 (122)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module SimpleFTPClient (120)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (118)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module PacketHandler (116)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (114)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module MediaAssets (112)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module Overlay (110)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module FunctionalTesting (108)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module MessageLog (106)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module UMG (104)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module SlateReflector (102)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module Slate (100)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module SlateCore (98)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module MRMesh (96)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module Messaging (94)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (92)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module AudioMixerSDL (90)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module AudioMixerCore (89)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module SignalProcessing (88)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module Networking (84)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module Core (82)
+[2026.04.30-17.53.47:143][390]LogModuleManager: Shutting down and abandoning module Media (80)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module ImageWrapper (76)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module OpenGLDrv (74)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module InputCore (72)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module Settings (70)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module PhysXCooking (68)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module ChaosSolvers (66)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (65)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module Chaos (62)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module LinuxDeviceProfileSelector (60)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (58)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (56)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (52)
+[2026.04.30-17.53.47:144][390]LogModuleManager: Shutting down and abandoning module HTTP (47)
+[2026.04.30-17.53.47:171][390]LogModuleManager: Shutting down and abandoning module SSL (46)
+[2026.04.30-17.53.47:172][390]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (42)
+[2026.04.30-17.53.47:172][390]LogModuleManager: Shutting down and abandoning module NiagaraShader (40)
+[2026.04.30-17.53.47:172][390]LogModuleManager: Shutting down and abandoning module VariantManagerContent (38)
+[2026.04.30-17.53.47:172][390]LogModuleManager: Shutting down and abandoning module DatasmithContent (36)
+[2026.04.30-17.53.47:172][390]LogModuleManager: Shutting down and abandoning module AISupportModule (34)
+[2026.04.30-17.53.47:172][390]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (32)
+[2026.04.30-17.53.47:172][390]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (30)
+[2026.04.30-17.53.47:172][390]LogModuleManager: Shutting down and abandoning module PlatformCrypto (28)
+[2026.04.30-17.53.47:172][390]LogModuleManager: Shutting down and abandoning module RenderCore (26)
+[2026.04.30-17.53.47:172][390]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2026.04.30-17.53.47:172][390]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2026.04.30-17.53.47:173][390]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2026.04.30-17.53.47:173][390]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2026.04.30-17.53.47:173][390]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2026.04.30-17.53.47:173][390]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2026.04.30-17.53.47:173][390]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2026.04.30-17.53.47:174][390]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2026.04.30-17.53.47:174][390]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2026.04.30-17.53.47:174][390]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2026.04.30-17.53.47:174][390]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2026.04.30-17.53.47:174][390]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2026.04.30-17.53.47:174][390]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2026.04.30-17.53.47:189][390]LogExit: Exiting.
+[2026.04.30-17.53.47:189][390]LogInit: Tearing down SDL.
+[2026.04.30-17.53.47:200][390]Log file closed, 05/01/26 01:53:47

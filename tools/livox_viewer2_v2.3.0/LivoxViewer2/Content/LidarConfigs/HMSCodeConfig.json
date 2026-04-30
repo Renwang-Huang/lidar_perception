@@ -1,0 +1,205 @@
+{
+ "dev_type": "MID-360", 
+ "hms_table":[
+    {
+        "hms_code": "0x01020002",
+        "description": "Environment temperature is slightly high",
+        "disposition": "Please check environment temperature and losing heat measures"
+    },
+    {
+        "hms_code": "0x01040002",
+        "description": "The window is dirty, which will influence the reliability of point cloud",
+        "disposition": "please clean the window"
+    },
+    {
+        "hms_code": "0x01110004",
+        "description": "Abnormal temperature of internal components of the device",
+        "disposition": "Please check environment temperature and losing heat measures"
+    },
+    {
+        "hms_code": "0x01120004",
+        "description": "Abnormal temperature of internal components of the device",
+        "disposition": "Please check environment temperature and losing heat measures"
+    },
+    {
+        "hms_code": "0x01130004",
+        "description": "IMU stop working",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x01140004",
+        "description": "Environment temperature is high",
+        "disposition": "Please check environment temperature and losing heat measures"
+    },
+    {
+        "hms_code": "0x01150004",
+        "description": "Environment temperature beyond the limit, device has stopped working",
+        "disposition": "Please check environment temperature and losing heat measures"
+    },
+    {
+        "hms_code": "0x01160004",
+        "description": "Abnormal external voltage",
+        "disposition": "Please check the external voltage"
+    },
+    {
+        "hms_code": "0x01170004",
+        "description": "Abnormal lidar parameters",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02010002",
+        "description": "Scan module is heating",
+        "disposition": "Please wait the scan module heating"
+    },
+    {
+        "hms_code": "0x02100003",
+        "description": "scan module is abonormal, system is trying to recover",
+        "disposition": "Please wait, if it last too long, please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02100004",
+        "description": "scan module is abonormal",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02110003",
+        "description": "scan module is abonormal, system is trying to recover",
+        "disposition": "Please wait, if it last too long, please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02110004",
+        "description": "scan module is abonormal",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02120003",
+        "description": "scan module is abonormal, system is trying to recover",
+        "disposition": "Please wait, if it last too long, please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02120004",
+        "description": "scan module is abonormal, system is trying to recover",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02130003",
+        "description": "scan module is abonormal, system is trying to recover",
+        "disposition": "Please wait, if it last too long, please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02130004",
+        "description": "scan module is abonormal",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02140003",
+        "description": "scan module is abonormal, system is trying to recover",
+        "disposition": "Please wait, if it last too long, please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02140004",
+        "description": "scan module is abonormal",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02150003",
+        "description": "scan module is abonormal, system is trying to recover",
+        "disposition": "Please wait, if it last too long, please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02150004",
+        "description": "scan module is abonormal",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02160003",
+        "description": "scan module is abonormal, system is trying to recover",
+        "disposition": "Please wait, if it last too long, please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02160004",
+        "description": "scan module is abonormal",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02170003",
+        "description": "scan module is abonormal, system is trying to recover",
+        "disposition": "Please wait, if it last too long, please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02170004",
+        "description": "scan module is abonormal",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02180003",
+        "description": "scan module is abonormal, system is trying to recover",
+        "disposition": "Please wait, if it last too long, please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02180004",
+        "description": "scan module is abonormal",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02190003",
+        "description": "scan module is abonormal, system is trying to recover",
+        "disposition": "Please wait, if it last too long, please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x02190004",
+        "description": "scan module is abonormal",
+        "disposition": "Please try restarting the device to restore"
+    },
+    {
+        "hms_code": "0x04010002",
+        "description": "communication link was link down, now it is recovery",
+        "disposition": "please check the communication link"
+    },
+    {
+        "hms_code": "0x04020002",
+        "description": "PTP time synchronization stop or time gap is too big",
+        "disposition": "Please check the PTP time source"
+    },
+    {
+        "hms_code": "0x04030002",
+        "description": "The version of PTP is 1588-v2.1, device don't support this version",
+        "disposition": "Please replace 1588-v2.1 version with 1588.2.0 version"
+    },
+    {
+        "hms_code": "0x04040002",
+        "description": "PPS time synchronization abnormal",
+        "disposition": "Please check PPS and GPS signal"
+    },
+    {
+        "hms_code": "0x04050002",
+        "description": "There was an exception in time synchronization",
+        "disposition": "Please check the exception reason"
+    },
+    {
+        "hms_code": "0x04060002",
+        "description": "Time synchronization accuracy is low",
+        "disposition": "Please check the time source"
+    },
+    {
+        "hms_code": "0x04070002",
+        "description": "PPS time synchronization fail becuase of loss GPS signal",
+        "disposition": "Please check GPS signal"
+    },
+    {
+        "hms_code": "0x04080002",
+        "description": "PPS time synchronization fail becuase of loss PPS signal",
+        "disposition": "Please check PPS signal"
+    },
+    {
+        "hms_code": "0x04090002",
+        "description": "GPS signal is abnormal",
+        "disposition": "Please check GPS time source"
+    },
+    {
+        "hms_code": "0x040A0002",
+        "description": "The PTP and GPTP signals exist at the same time, so there is a problem with synchronization",
+        "disposition": "Please check the network topology, use PTP or GPTP alone to synchronize"
+    }
+ ]
+}

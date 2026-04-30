@@ -1,0 +1,4 @@
+{
+	"SupportedDevices" : ["HAP", "Mid360", "HAP_Industrial",],
+	"ReflectivityToColorThresholds" : [30, 90, 150]
+}
