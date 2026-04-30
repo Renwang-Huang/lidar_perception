@@ -14,7 +14,7 @@ def generate_launch_description():
     )
 
     config_path = PathJoinSubstitution(
-        [FindPackageShare("lidar_odom"), "config", "lidar_odom2.yaml"]
+        [FindPackageShare("lidar_odom"), "config", "lidar_left_odom.yaml"]
     )
 
     return launch.LaunchDescription(
@@ -27,16 +27,16 @@ def generate_launch_description():
 
             launch_ros.actions.Node(
                 package="lidar_odom",
-                namespace="lidar_odom1",
+                namespace="lidar_odom",
                 executable="odom_node",
-                name="lidar_odom1",
+                name="lidar_odom",
                 output="screen",
                 parameters=[{"config_path": config_path.perform(launch.LaunchContext())}]
             ),
 
             launch_ros.actions.Node(
                 package="rviz2",
-                namespace="lidar_odom1",
+                namespace="lidar_odom",
                 executable="rviz2",
                 name="rviz2",
                 output="screen",

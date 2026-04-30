@@ -1,10 +1,10 @@
-imu_topic: /livox/imu_192_168_2_144
-lidar_topic: /livox/lidar_192_168_2_144
+imu_topic: /livox/imu_192_168_1_125
+lidar_topic: /livox/lidar_192_168_1_125
 body_frameid: body
 world_frameid: world
 
-is_custommsg: true
-print_time_cost: false
+is_custommsg: false
+print_time_cost: true
 
 lidar_filter_num: 2 # This parameter was previously set to 6
 lidar_min_range: 1.0
