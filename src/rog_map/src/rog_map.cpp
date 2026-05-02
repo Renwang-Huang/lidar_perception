@@ -231,8 +231,7 @@ void ROGMap::odomCallback(const nav_msgs::msg::Odometry::ConstSharedPtr msg) {
 
     geometry_msgs::msg::TransformStamped transformStamped;
     transformStamped.header.stamp = nh_->now();
-    // transformStamped.header.frame_id = "world";
-    transformStamped.header.frame_id = "camera_init";
+    transformStamped.header.frame_id = "world";
     transformStamped.child_frame_id = "drone";
     transformStamped.transform.translation.x = msg->pose.pose.position.x;
     transformStamped.transform.translation.y = msg->pose.pose.position.y;
@@ -304,8 +303,7 @@ void ROGMap::vecEVec3fToPC2(const vec_E<Vec3f>& points, sensor_msgs::msg::PointC
     }
     pcl::toROSMsg(pcl_cloud, cloud);
     cloud.header.stamp = nh_->now();
-    // cloud.header.frame_id = "world";
-    cloud.header.frame_id = "camera_init";
+    cloud.header.frame_id = "world";
 }
 
 void ROGMap::vizCallback() {
