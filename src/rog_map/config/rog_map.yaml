@@ -1,12 +1,12 @@
 rm_node:
   ros__parameters:
     rog_map:
-      resolution: 0.1
-      inflation_resolution: 0.2
-      inflation_step: 1
+      resolution: 0.05
+      inflation_resolution: 0.05
+      inflation_step: 2
       unk_inflation_en: false
       unk_inflation_step: 1
-      map_size: [50.0, 50.0, 6.0]
+      map_size: [10.0, 10.0, 5.0]
       # If the map rolling is disable, the map origin [m] should be set.
       fix_map_origin: [0.0, 0.0, 0.0]
       frontier_extraction_en: true
@@ -16,7 +16,7 @@ rm_node:
       virtual_ground_height: -9999.0
 
       block_inf_pt: false
-      kd_tree_en: false
+      kd_tree_en: true
       load_pcd_en: false
 
       map_sliding:
@@ -25,7 +25,7 @@ rm_node:
         threshold: 0.3
 
       esdf:
-        enable: true
+        enable: false
         resolution: 0.1
         # The range of esdf around the odom [m].
         local_update_box: [5.0, 5.0, 3.0]
@@ -33,8 +33,8 @@ rm_node:
       # ROS 2 Topics configuration
       ros_callback:
         enable: true
-        cloud_topic: "/cloud_registered"
-        odom_topic: "/Odometry"
+        cloud_topic: "/lidar_odom/world_cloud"
+        odom_topic: "/lidar_odom/Odometry"
         odom_timeout: 2.0
 
       visualization:
@@ -43,13 +43,13 @@ rm_node:
         time_rate: 10.0
         frame_rate: 0.0
         # visualization range along the odom [m].
-        range: [50.0, 50.0, 6.0]
-        frame_id: "camera_init"
+        range: [10.0, 10.0, 5.0]
+        frame_id: "world"
         pub_unknown_map_en: false
 
       # Intensity filter
       intensity_thresh: -10.0
-      point_filt_num: 15
+      point_filt_num: 3
 
       # Probabilistc update
       raycasting:
@@ -57,7 +57,7 @@ rm_node:
         blind_filter_en: false
         blind_filter_dis: 1.0
         batch_update_size: 1
-        local_update_box: [50.0, 50.0, 5.0]
+        local_update_box: [10.0, 10.0, 5.0]
         # The range of raycasting [m].
         ray_range: [0.0, 5.0]
 
