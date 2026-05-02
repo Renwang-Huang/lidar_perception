@@ -13,7 +13,7 @@
             lidar_point_jump_span: 3
             lidar_point_time_scale: 1.0e-9
             lidar_use_min_distance: 0.5
-            lidar_use_max_distance: 1000.0
+            lidar_use_max_distance: 40.0
             lidar_rotation_noise_std: 0.001
             lidar_position_noise_std: 0.01
 
@@ -52,7 +52,9 @@
 
         frontend:
             fusion_opti_iters: 30
-            fusion_method: TightCouplingOptimization # LooseCoupling, TightCouplingKF, TightCouplingOptimization
+            # fusion_method: LooseCoupling # tested good
+            # fusion_method: TightCouplingKF # not surported
+            fusion_method: TightCouplingOptimization # tested good
 
             registration_and_searcher_mode: PointToPlane_IVOX
             feature:
@@ -66,7 +68,7 @@
         system:
             keyframe_delta_distance: 1.0
             keyframe_delta_rotation: 0.2
-            enable_loopclosure: false
+            enable_loopclosure: true
             enable_visualize_global_map: true
             global_map_visualization_resolution: 0.7
             tile_map_grid_size: 100.0

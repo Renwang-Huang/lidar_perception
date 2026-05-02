@@ -161,8 +161,8 @@ Visualization Manager:
     - Alpha: 0.10000000149011612
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 2.700000047683716
-        Min Value: -0.8999999761581421
+        Max Value: 2.325000047683716
+        Min Value: -0.7749999761581421
         Value: true
       Axis: Z
       Channel Name: z
@@ -180,7 +180,7 @@ Visualization Manager:
       Position Transformer: XYZ
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.20000000298023224
+      Size (m): 0.05000000074505806
       Style: Boxes
       Topic:
         Depth: 5
@@ -188,7 +188,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /rog_map/inf_occ
+        Value: /rog_map/occ
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
@@ -238,25 +238,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 8.671980857849121
+      Distance: 7.637446880340576
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.14843150973320007
-        Y: 0.07435059547424316
-        Z: 0.26577308773994446
+        X: 0.008259585127234459
+        Y: 0.4299679696559906
+        Z: 0.37795814871788025
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.3502020835876465
+      Pitch: 1.0997967720031738
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.575269937515259
+      Yaw: 5.8469462394714355
     Saved: ~
 Window Geometry:
   Displays:
